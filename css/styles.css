@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Open Sans", Sans-serif;
+  font-weight: bold;
+}
+
+header {
+  background-color: black;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1224px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+}
