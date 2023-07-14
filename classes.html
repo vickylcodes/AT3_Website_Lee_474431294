@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="classes" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="ML Strength - The Premier Health & Fitness Brand in Brisbane."
-    />
+    <meta name="description" content="ML Strength - Health and Fitness" />
     <title>ML Strength - Health and Fitness</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,11 +28,6 @@
     </script>
     <script type="text/javascript">
       $(document).ready(function () {
-        $("#gif-section").load("gif-section.html");
-      });
-    </script>
-    <script src="script.js" type="text/javascript">
-      $(document).ready(function () {
         $("#hamburger").click(function () {
           $("span").toggleClass("active");
           $("#nav-menu").toggleClass("active");
@@ -52,10 +44,32 @@
     <header>
       <div id="header"></div>
     </header>
-    <section id="gif-section"></section>
-    <section id="h1-h2">
-      <h1>POWER UP</h1>
-      <h2>AT ML STRENGTH</h2>
-    </section>
+    <main id="about-container">
+      <section class="about-item">
+        <img
+          src="/img/man-ball.jpg"
+          alt="Man jumping mid air holding blue ball above his head"
+          id="man-ball"
+        />
+      </section>
+      <section class="about-item">
+        <h3>Our Philosophy</h3>
+          <p>We believe fitness is more than a fad – it's a way of life.</p>
+          <p>Whether you're a pro athlete or a fitness enthusiast, we're here to take your performance
+            to the next level. Our specialised training programs focus on <span style="color: #E63946; font-size: 1.2em;">speed,
+            strength, power, and sports therapy,</span> giving you the winning edge. With our 24/7 availability, cutting-edge
+            facilities, and a welcoming atmosphere free from pushy sales tactics,
+            ML Strength is your ultimate destination for fitness success. </p>
+          </p>
+          <p>Unleash your true athletic potential with ML Strength today!</p>
+      </section>
+      <section class="about-item">
+        <img
+          src="/img/man-jumping.jpg"
+          alt="Blindfolded man jumping on box"
+          id="man-ball"
+        />
+      </section>
+    </main>
   </body>
 </html>
