@@ -24,7 +24,13 @@
     <script type="text/javascript">
       $(document).ready(function () {
         $("#hamburger").click(function () {
-          $("span").toggleClass("change");
+          $("span").toggleClass("active");
+          $("#nav-menu").toggleClass("active");
+        });
+
+        $(".nav-link").click(function () {
+          $("span").removeClass("active");
+          $("#nav-menu").removeClass("active");
         });
       });
     </script>
@@ -36,19 +42,19 @@
           <a href="#" id="logo">ML STRENGTH</a>
           <ul id="nav-menu">
             <li class="nav-item">
-              <a href="#" class="nav-link">Home</a>
+              <a href="#" class="nav-link">HOME</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">About</a>
+              <a href="#" class="nav-link">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Boxing</a>
+              <a href="#" class="nav-link">BOXING</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Classes</a>
+              <a href="#" class="nav-link">CLASSES</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
+              <a href="#" class="nav-link">CONTACT</a>
             </li>
           </ul>
           <div>
@@ -60,5 +66,28 @@
         </nav>
       </div>
     </header>
+    <section id="gif-section">
+      <div class="gif">
+        <img
+          src="/img/woman-boxing.gif"
+          alt="Woman boxing towards camera"
+          id="boxing-gif"
+        />
+      </div>
+      <div class="gif">
+        <img
+          src="/img/woman-boxing.gif"
+          alt="Woman boxing towards camera"
+          id="boxing-gif"
+        />
+      </div>
+      <div class="gif">
+        <img
+          src="/img/woman-boxing.gif"
+          alt="Woman boxing towards camera"
+          id="boxing-gif"
+        />
+      </div>
+    </section>
   </body>
 </html>

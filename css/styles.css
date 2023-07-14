@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -8,8 +9,11 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  width: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
+  overflow-x: hidden;
 }
 
 header {
@@ -41,7 +45,7 @@ a span:nth-child(2) {
   color: white;
 }
 
-a span.change {
+a span.active {
   transform: translateY(-100%);
 }
 
@@ -52,18 +56,17 @@ a span.change {
 }
 
 .navbar {
-  min-height: 50px;
+  min-height: 39px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  font-size: 12px;
+  font-size: 0.6em;
 }
 
 #nav-menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 60px;
+  gap: 30px;
+  padding: 0 50px;
 }
 
 .nav-link {
@@ -75,6 +78,7 @@ a span.change {
 }
 
 #logo {
+  font-size: 2em;
   color: white;
   text-decoration: none;
 }
@@ -88,6 +92,16 @@ a span.change {
   border: 4px solid #1d3557;
   border-radius: 50%;
   overflow: hidden;
+}
+#gif-section {
+  display: flex;
+  justify-content: center; /* Horizontally center the GIFs */
+  align-items: center; /* Vertically center the GIFs */
+}
+
+.gif {
+  flex: 1; /* Distribute the available width equally among the GIFs */
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -106,11 +120,10 @@ a span.change {
     top: 50px;
     gap: 0;
     flex-direction: column;
-    background-color: #1d3557;
+    background-color: #457b9d;
+    opacity: 0.5;
     width: 100%;
     text-align: center;
-    transition: 0.3s;
-    z-index: 9999;
   }
 
   .nav-item {
