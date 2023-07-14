@@ -55,30 +55,34 @@ a span.active {
 
 h1,
 h2 {
-  display: block;
+  display: flex;
+  justify-content: center;
+  width: 500px;
 }
 
 h1 {
-  width: 30%;
   font-size: 4em;
-  margin: 150px auto;
-  text-align: center;
   color: white;
   border: 20px solid #e63946;
   background-color: #e63946;
+  margin: 100px auto;
 }
 
 h2 {
-  font-weight: bolder;
-  width: 25%;
-  margin: -150px auto;
-  margin-right: 600px;
+  position: relative;
   font-size: 2.5em;
-  display: block;
-  text-align: center;
+  font-weight: bolder;
   color: #e63946;
   border: 20px solid white;
   background-color: white;
+  margin: -100px auto;
+  left: 100px;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 .container {
@@ -144,7 +148,7 @@ h2 {
 }
 
 .gif img {
-  width: 120%;
+  width: 130%;
   height: auto;
   display: block;
 }
