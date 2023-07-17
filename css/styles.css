@@ -14,7 +14,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   overflow-x: hidden;
-  overflow-y: hidden;
   background-color: #1d3557;
 }
 
@@ -105,20 +104,35 @@ h3 {
   height: calc(50vh - 100px);
 }
 
-#brianne {
-  background-image: url("/img/brianne.jpg");
+#leo {
+  background-image: url("/img/leo.jpg");
   background-size: cover;
   max-width: 100%;
-  height: calc(100vh - 115px);
+  height: 100vh;
   color: #e63946;
-  padding: 10px;
   font-size: 5em;
   font-weight: bolder;
-  text-align: right;
+  margin: 0;
+  padding-top: 130px;
+  padding-left: 218px;
+}
+
+#kathy {
+  background-image: url("/img/kathy.jpg");
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+  color: #e63946;
+  font-size: 5em;
+  font-weight: bolder;
+  margin: 0;
+  padding-top: 260px;
+  padding-left: 280px;
 }
 
 #about header,
-#trainers header {
+#trainers header,
+#classes header {
   background-color: #e63946;
 }
 
@@ -135,7 +149,7 @@ h3 {
 .about-item img,
 .trainers-item img {
   width: 100%;
-  height: calc(100vh - 79px);
+  height: 100vh;
   object-fit: cover;
   scroll-margin-bottom: none;
 }
@@ -220,6 +234,33 @@ p {
   width: 130%;
   height: auto;
   display: block;
+}
+
+.timetable {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+  margin: 200px;
+  color: white;
+  border: 10px white;
+  border-style: inset double;
+  padding: 50px;
+  margin-top: 120px;
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.time-slot {
+  color: black;
+  border: 8px #e63946;
+  border-top-style: inset;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
