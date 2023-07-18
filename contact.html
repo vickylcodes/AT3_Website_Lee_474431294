@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html id="trainers" lang="en">
+<html id="classes" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="ML Strength - Health and Fitness" />
-    <title>Our Trainers</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,34 +44,41 @@
     <header>
       <div id="header"></div>
     </header>
-    <main id="trainers-container">
-      <section class="trainers-item">
-        <h3 class="trainers-h3" id="leo">Leo</h3>
-      </section>
-      <section class="trainers-item">
-        <h3 class="trainers-h3">Maurice Lidman</h3>
-        <img src="img/maurice.jpg" alt="Man training boxer" id="maurice" />
-        <p class="trainers-p">
-          Our owner and boxing trainer
-          <span style="color: #e63946; font-size: 1.2em">Maurice Lidman</span>
-          holds decades of experience in the ring. Maurice shares his expertise
-          by running exhilarating, high-energy boxing classes. Whether you're a
-          beginner or an intermediate boxer, join us for a fun and rewarding
-          experience, gaining valuable skills and enjoying one of the best
-          cardiovascular workouts available.
-        </p>
-        <h3 class="trainers-h3">Our Trainers</h3>
-        <p class="trainers-p">
-          Our trainer,
-          <span style="color: #e63946; font-size: 1.2em">Kathy</span> (right)
-          and <span style="color: #e63946; font-size: 1.2em">Leo</span> (left)
-          are all Les Mills accredited instructors and are second to none. They
-          both have a Bachelor Degrees in Human Movements
-        </p>
-      </section>
-      <section class="trainers-item">
-        <h3 class="trainers-h3" id="kathy">Kathy</h3>
-      </section>
-    </main>
+    <h1 id="form-h1">CONTACT MLS</h1>
+    <div class="form-container">
+      <form id="contact-form" method="POST" action="process-form.php">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group textarea-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">SUBMIT</button>
+        </div>
+      </form>
+      <a href="#" id="help-link">Help</a>
+      <div id="help-popup">
+        <video controls>
+          <source src="help-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
