@@ -82,6 +82,7 @@ h2 {
 h3 {
   font-size: 4em;
   font-family: "Roboto", sans-serif;
+  text-align: center;
   color: #f1faee;
 }
 
@@ -176,7 +177,7 @@ h3 {
 }
 
 .navbar {
-  min-height: 80px;
+  min-height: 7vh;
   display: flex;
   align-items: center;
 }
@@ -314,6 +315,7 @@ input:hover,
 textarea:hover {
   border-width: 2px;
 }
+
 textarea {
   min-height: 300px;
   resize: vertical;
