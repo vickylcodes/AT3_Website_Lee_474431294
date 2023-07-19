@@ -1,77 +1,73 @@
 <!DOCTYPE html>
 <html id="trainers" lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="ML Strength - Health and Fitness" />
-    <title>Our Trainers</title>
-    <link rel="stylesheet" href="css/styles.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/80f05fb3e6.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.js"
-      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js" type="text/javascript"></script>
-    <script>
-      $(document).ready(function () {
-        $("#hamburger").click(function () {
-          $("span").toggleClass("active");
-          $("#nav-menu").toggleClass("active");
-        });
-        $(".nav-link").click(function () {
-          $("span").removeClass("active");
-          $("#nav-menu").removeClass("active");
-        });
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ML Strength - Health and Fitness" />
+  <title>Our Trainers</title>
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/80f05fb3e6.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <script src="script.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function () {
+      $("#hamburger").click(function () {
+        $("span").toggleClass("active");
+        $("#nav-menu").toggleClass("active");
       });
-    </script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $("#header").load("header.html");
+      $(".nav-link").click(function () {
+        $("span").removeClass("active");
+        $("#nav-menu").removeClass("active");
       });
-    </script>
-  </head>
-  <body>
-    <header>
-      <div id="header"></div>
-    </header>
-    <main id="trainers-container">
-      <section class="trainers-item">
-        <h3 class="trainers-h3" id="leo">Leo</h3>
-      </section>
-      <section class="trainers-item">
-        <h3 class="trainers-h3">Maurice Lidman</h3>
-        <img src="img/maurice.jpg" alt="Man training boxer" id="maurice" />
-        <p class="trainers-p">
-          Our owner and boxing trainer
-          <span style="color: #e63946; font-size: 1.2em">Maurice Lidman</span>
-          holds decades of experience in the ring. Maurice shares his expertise
-          by running exhilarating, high-energy boxing classes. Whether you're a
-          beginner or an intermediate boxer, join us for a fun and rewarding
-          experience, gaining valuable skills and enjoying one of the best
-          cardiovascular workouts available.
-        </p>
-        <h3 class="trainers-h3">Our Trainers</h3>
-        <p class="trainers-p">
-          Our trainer,
-          <span style="color: #e63946; font-size: 1.2em">Kathy</span> (right)
-          and <span style="color: #e63946; font-size: 1.2em">Leo</span> (left)
-          are all Les Mills accredited instructors and are second to none. They
-          both have a Bachelor Degrees in Human Movements
-        </p>
-      </section>
-      <section class="trainers-item">
-        <h3 class="trainers-h3" id="kathy">Kathy</h3>
-      </section>
-    </main>
-  </body>
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#header").load("header.html");
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div id="header"></div>
+  </header>
+  <main id="trainers-container">
+    <section class="trainers-item">
+      <h3 class="trainers-h3" id="leo">Leo</h3>
+    </section>
+    <section class="trainers-item">
+      <h3 class="trainers-h3">Maurice Lidman</h3>
+      <img src="img/maurice.jpg" alt="Man training boxer" id="maurice" />
+      <p class="trainers-p">
+        Our owner and boxing trainer
+        <span style="color: #e63946; font-size: 1.2em">Maurice Lidman</span>
+        holds decades of experience in the ring. Maurice shares his expertise
+        by running exhilarating, high-energy boxing classes. Whether you're a
+        beginner or an intermediate boxer, join us for a fun and rewarding
+        experience, gaining valuable skills and enjoying one of the best
+        cardiovascular workouts available.
+      </p>
+      <h3 class="trainers-h3">Our Trainers</h3>
+      <p class="trainers-p">
+        Our trainer,
+        <span style="color: #e63946; font-size: 1.2em">Kathy</span> (right)
+        and <span style="color: #e63946; font-size: 1.2em">Leo</span> (left)
+        are all Les Mills accredited instructors and are second to none. Both trainers
+        hold Bachelor Degrees in Human Movements.
+      </p>
+    </section>
+    <section class="trainers-item">
+      <h3 class="trainers-h3" id="kathy">Kathy</h3>
+    </section>
+  </main>
+</body>
+
 </html>

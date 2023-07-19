@@ -82,19 +82,24 @@ h2 {
 h3 {
   font-size: 4em;
   font-family: "Roboto", sans-serif;
+  color: #f1faee;
+}
+
+#h3-timetable {
+  margin: 50px 0 -60px 0;
+  text-align: center;
 }
 
 .trainers-h3 {
   font-size: 3.5em;
-  color: white;
-  font-family: "Roboto", sans-serif;
   text-align: center;
   margin: 20px;
 }
 
 .trainers-p {
+  color: #f1faee;
   font-size: 1.3em;
-  text-align: center;
+  text-align: justify;
   margin: 22px;
 }
 
@@ -153,20 +158,14 @@ h3 {
   object-fit: cover;
 }
 
-.about-item h3,
-p {
-  color: #f1faee;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-}
-
 .about-item h3 {
   margin: 80px;
 }
 
 .about-item p {
   font-size: 1.5em;
-  margin: 22px;
+  color: #f1faee;
+  margin: 20px;
   text-align: justify;
 }
 
@@ -268,7 +267,7 @@ p {
 .form-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px 100px;
   width: 100%;
   margin: 0 auto;
@@ -313,7 +312,7 @@ textarea {
 
 input:hover,
 textarea:hover {
-  border-width: 3px;
+  border-width: 2px;
 }
 textarea {
   min-height: 300px;
@@ -330,7 +329,7 @@ button {
 #help {
   display: block;
   margin: 0 auto;
-  margin-top: -50px;
+  margin-top: -30px;
   text-align: center;
 }
 
@@ -348,7 +347,8 @@ label[for]:after {
   font-weight: bold;
 }
 
-label[for="message"]:after {
+label[for="message"]:after,
+label[for="mobile"]:after {
   content: none;
 }
 .invalid {
@@ -399,7 +399,8 @@ label[for="message"]:after {
   }
 
   #form-h1 {
-    width: auto;
+    width: 100%;
+    margin-top: 30px;
     text-align: center;
     font-size: 3em;
   }
@@ -408,6 +409,7 @@ label[for="message"]:after {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
+    margin-top: -30px;
   }
 
   .form-group label {
@@ -429,8 +431,30 @@ label[for="message"]:after {
     border-color: #e63946;
   }
 
+  input::placeholder,
+  textarea::placeholder {
+    color: white;
+  }
+
   input,
   textarea {
     min-width: 300px;
+  }
+
+  textarea {
+    margin-top: -50px;
+    min-height: 200px;
+  }
+
+  input[type="tel"] {
+    display: none;
+  }
+
+  .textarea-group {
+    margin-bottom: -20px;
+  }
+
+  #help {
+    display: none;
   }
 }

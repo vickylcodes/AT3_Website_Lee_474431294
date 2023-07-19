@@ -119,7 +119,7 @@ $(document).ready(function () {
     if (email === "" || !/^\S+@\S+\.\S+$/.test(email)) {
       showError(
         emailInput,
-        "Please enter a valid email address (must include @)."
+        "Please enter a valid email address (must include @.com)."
       );
     } else {
       hideError(emailInput);

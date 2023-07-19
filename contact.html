@@ -45,29 +45,29 @@
       <form id="contact-form" method="POST" action="process-form.php">
         <div class="form-group">
           <label for="first-name">First Name</label>
-          <input type="text" id="first-name" name="first-name" required />
+          <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required />
           <div class="error-container"></div>
         </div>
         <div class="form-group">
           <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" name="last-name" required />
+          <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required />
           <div class="error-container"></div>
         </div>
         <div class="form-group">
           <label for="mobile">Mobile</label>
-          <input type="tel" id="mobile" name="mobile" pattern="04\4[8]" required />
+          <input type="tel" id="mobile" name="mobile" pattern="04\4[8]" placeholder="Enter your mobile" />
           <div class="error-container"></div>
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
           <div class="error-container"></div>
         </div>
     </div>
     <div class="column">
       <div class="form-group textarea-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="message">Enquiry</label>
+        <textarea id="message" name="message" rows="4" placeholder="Enter your mesage..." required></textarea>
       </div>
       <div class="form-group">
         <button type="submit">SUBMIT</button>
