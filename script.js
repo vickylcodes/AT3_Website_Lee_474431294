@@ -21,7 +21,9 @@ document
     e.preventDefault(); // Prevent form submission
 
     // Retrieve form data
-    var name = document.getElementById("name").value;
+    var firstName = document.getElementById("first-name").value;
+    var lastName = document.getElementById("last-name").value;
+    var mobile = document.getElementById("mobile").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
 
@@ -37,7 +39,9 @@ document
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        name: name,
+        firstName: firstName,
+        lastName: lastName,
+        mobile: mobile,
         email: email,
         message: message,
       }),
@@ -59,4 +63,84 @@ document.getElementById("help-link").addEventListener("mouseover", function () {
 
 document.getElementById("help-link").addEventListener("mouseout", function () {
   document.getElementById("help-popup").style.display = "none";
+});
+
+$(document).ready(function () {
+  // Retrieve form elements
+  const firstNameInput = document.getElementById("first-name");
+  const lastNameInput = document.getElementById("last-name");
+  const mobileInput = document.getElementById("mobile");
+  const emailInput = document.getElementById("email");
+
+  // Add event listeners for input validation
+  firstNameInput.addEventListener("input", validateFirstName);
+  lastNameInput.addEventListener("input", validateLastName);
+  mobileInput.addEventListener("input", validateMobile);
+  emailInput.addEventListener("input", validateEmail);
+
+  function validateFirstName() {
+    const firstName = firstNameInput.value.trim();
+    if (firstName === "" || !/^[A-Za-z-]{2,}$/.test(firstName)) {
+      showError(
+        firstNameInput,
+        "Please enter a valid first name (at least two letters, hyphens allowed)."
+      );
+    } else {
+      hideError(firstNameInput);
+    }
+  }
+
+  function validateLastName() {
+    const lastName = lastNameInput.value.trim();
+    if (lastName === "" || !/^[A-Za-z-]{2,}$/.test(lastName)) {
+      showError(
+        lastNameInput,
+        "Please enter a valid last name (at least two letters, hyphens allowed)."
+      );
+    } else {
+      hideError(lastNameInput);
+    }
+  }
+
+  function validateMobile() {
+    const mobile = mobileInput.value.trim();
+    if (mobile === "" || !/^04\d{8}$/.test(mobile)) {
+      showError(
+        mobileInput,
+        "Please enter a valid mobile number (starting with '04')."
+      );
+    } else {
+      hideError(mobileInput);
+    }
+  }
+
+  function validateEmail() {
+    const email = emailInput.value.trim();
+    if (email === "" || !/^\S+@\S+\.\S+$/.test(email)) {
+      showError(
+        emailInput,
+        "Please enter a valid email address (must include @)."
+      );
+    } else {
+      hideError(emailInput);
+    }
+  }
+
+  function showError(input, message) {
+    input.classList.add("invalid");
+    const errorSpan = document.createElement("span");
+    errorSpan.className = "error-message";
+    errorSpan.textContent = message;
+    const errorContainer =
+      input.parentElement.querySelector(".error-container");
+    errorContainer.innerHTML = "";
+    errorContainer.appendChild(errorSpan);
+  }
+
+  function hideError(input) {
+    input.classList.remove("invalid");
+    const errorContainer =
+      input.parentElement.querySelector(".error-container");
+    errorContainer.innerHTML = "";
+  }
 });

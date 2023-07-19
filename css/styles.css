@@ -151,7 +151,6 @@ h3 {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  scroll-margin-bottom: none;
 }
 
 .about-item h3,
@@ -265,26 +264,27 @@ p {
   padding: 20px;
   text-align: center;
 }
+
 .form-container {
-  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px 100px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
   background-color: #1d3557;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px 100px;
+.form-group {
+  margin: 30px;
 }
 
 #form-h1 {
-  text-align: center;
   background-color: #1d3557;
   white-space: nowrap;
   border: none;
+  margin-bottom: 0;
 }
 
 label {
@@ -299,16 +299,22 @@ label {
 
 input,
 textarea {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  color: white;
   width: 100%;
+  height: 100%;
   background-color: transparent;
   border: 1px solid white;
   padding: 5px;
+  letter-spacing: 1px;
+  min-width: 500px;
 }
 
 textarea {
-  width: 100%;
-  height: 200px;
-  resize: none;
+  min-height: 300px;
+  resize: vertical;
 }
 
 button {
@@ -318,8 +324,38 @@ button {
   padding: 10px;
 }
 
+#help {
+  display: block;
+  margin: 0 auto;
+  margin-top: -50px;
+  text-align: center;
+}
+
 #help-link {
   color: white;
+}
+#help-link:hover {
+  text-decoration: none;
+}
+
+label[for]:after {
+  content: "*";
+  color: #e63946;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+label[for="message"]:after {
+  content: none;
+}
+.invalid {
+  border-color: white;
+  border-width: 2px;
+}
+
+.error-container {
+  color: #e63946;
+  font-size: 0.5em;
 }
 
 @media (max-width: 768px) {
@@ -359,12 +395,102 @@ button {
     display: block;
   }
 
-  form {
-    grid-template-columns: 1fr;
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px 100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1d3557;
+  }
+
+  .form-group {
+    margin: 30px;
+  }
+
+  #form-h1 {
+    background-color: #1d3557;
+    white-space: nowrap;
+    border: none;
+    margin-bottom: 0;
+  }
+
+  label {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  input,
+  textarea {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 5px;
+    letter-spacing: 1px;
+    min-width: 500px;
+  }
+
+  textarea {
+    min-height: 300px;
+    resize: vertical;
+  }
+
+  button {
+    color: #1d3557;
+    font-weight: 800;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #help {
+    display: block;
+    margin: 0 auto;
+    margin-top: -50px;
+    text-align: center;
+  }
+
+  #help-link {
+    color: white;
+  }
+  #help-link:hover {
+    text-decoration: none;
+  }
+
+  label[for]:after {
+    content: "*";
+    color: #e63946;
+    margin-left: 5px;
+    font-weight: bold;
+  }
+
+  label[for="message"]:after {
+    content: none;
+  }
+  .invalid {
+    border-color: white;
+    border-width: 2px;
+  }
+
+  .error-container {
+    color: #e63946;
+    font-size: 0.5em;
   }
   label {
     display: none;
   }
+
   form,
   input,
   textarea {

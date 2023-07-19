@@ -1,84 +1,88 @@
 <!DOCTYPE html>
 <html id="classes" lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="ML Strength - Health and Fitness" />
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="css/styles.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/80f05fb3e6.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.js"
-      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js" type="text/javascript"></script>
-    <script>
-      $(document).ready(function () {
-        $("#hamburger").click(function () {
-          $("span").toggleClass("active");
-          $("#nav-menu").toggleClass("active");
-        });
-        $(".nav-link").click(function () {
-          $("span").removeClass("active");
-          $("#nav-menu").removeClass("active");
-        });
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ML Strength - Health and Fitness" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/80f05fb3e6.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <script src="script.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function () {
+      $("#hamburger").click(function () {
+        $("span").toggleClass("active");
+        $("#nav-menu").toggleClass("active");
       });
-    </script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $("#header").load("header.html");
+      $(".nav-link").click(function () {
+        $("span").removeClass("active");
+        $("#nav-menu").removeClass("active");
       });
-    </script>
-  </head>
-  <body>
-    <header>
-      <div id="header"></div>
-    </header>
-    <h1 id="form-h1">CONTACT MLS</h1>
-    <div class="form-container">
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#header").load("header.html");
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div id="header"></div>
+  </header>
+  <h1 id="form-h1">CONTACT MLS</h1>
+  <div class="form-container">
+    <div class="column">
       <form id="contact-form" method="POST" action="process-form.php">
         <div class="form-group">
           <label for="first-name">First Name</label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="first-name" name="first-name" required />
+          <div class="error-container"></div>
         </div>
         <div class="form-group">
           <label for="last-name">Last Name</label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="last-name" name="last-name" required />
+          <div class="error-container"></div>
         </div>
         <div class="form-group">
           <label for="mobile">Mobile</label>
-          <input type="email" id="email" name="email" required />
+          <input type="tel" id="mobile" name="mobile" pattern="04\4[8]" required />
+          <div class="error-container"></div>
         </div>
         <div class="form-group">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required />
+          <div class="error-container"></div>
         </div>
-        <div class="form-group textarea-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <div class="form-group">
-          <button type="submit">SUBMIT</button>
-        </div>
-      </form>
-      <a href="#" id="help-link">Help</a>
-      <div id="help-popup">
-        <video controls>
-          <source src="help-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+    </div>
+    <div class="column">
+      <div class="form-group textarea-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">SUBMIT</button>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  </form>
+  <section id="help">
+    <a href="#" id="help-link">Help</a>
+    <div id="help-popup">
+      <iframe src="https://www.youtube.com/embed/9eI84lhU7II" maxwidth="300px" height="200px" frameborder="0"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
 </html>
