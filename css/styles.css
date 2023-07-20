@@ -367,8 +367,12 @@ label[for="mobile"]:after {
 
 @media (max-width: 768px) {
   .navbar {
-    position: relative;
-    max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e63946;
+    z-index: 9999; /* Make sure the navbar appears above other elements */
   }
 
   a span {
@@ -424,7 +428,7 @@ label[for="mobile"]:after {
 
   #gif-img img {
     height: 200px;
-    margin-top: 18%;
+    margin-top: 35%;
   }
 
   #h3-about {
@@ -441,7 +445,7 @@ label[for="mobile"]:after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
-    margin-top: 50px;
+    margin-top: 320px;
   }
 
   .trainer-content {
@@ -472,18 +476,20 @@ label[for="mobile"]:after {
     bottom: initial;
     left: initial;
     z-index: 2;
-    height: 100vh;
-    margin-top: -195%;
+    margin-top: -180%;
+    padding: 38% 0 0 45%;
   }
 
   #leo {
     position: relative;
-    top: 205%;
+    top: 200%;
+    padding: 40% 30% 0 0;
   }
 
   #kathy,
   #leo {
-    padding: 10%;
+    font-size: 4em;
+    height: 70vh;
   }
 
   .about-item img {

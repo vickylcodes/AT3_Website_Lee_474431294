@@ -60,7 +60,7 @@
         </p>
         <h3 class="h3-trainers">Our Trainers</h3>
         <p class="trainers-p">
-          Our trainer,
+          Our trainers,
           <span style="color: #e63946; font-size: 1.2em">Kathy</span> (right)
           and <span style="color: #e63946; font-size: 1.2em">Leo</span> (left)
           are all Les Mills accredited instructors and are second to none. Both trainers
@@ -74,6 +74,16 @@
       </div>
     </section>
   </main>
+  <script>
+    $(document).ready(function () {
+      if ($(window).width() <= 768) {
+        $(".trainers-item p").each(function () {
+          $(this).html($(this).html().replace("(right)", ""));
+          $(this).html($(this).html().replace("(left)", ""));
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
