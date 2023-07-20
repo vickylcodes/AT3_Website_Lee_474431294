@@ -365,14 +365,18 @@ label[for="mobile"]:after {
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 10px;
+    position: relative;
+    max-width: 100%;
+  }
+
+  a span {
+    line-height: 43px;
   }
 
   #hamburger {
     display: block;
-    position: relative;
-    top: 30px;
-    left: 90px;
+    position: fixed;
+    top: 6%;
   }
 
   #nav-menu {
@@ -427,7 +431,7 @@ label[for="mobile"]:after {
 
   .about-item {
     width: 100%;
-    font-size: 0.8em;
+    font-size: 0.78em;
   }
 
   .about-item img {
