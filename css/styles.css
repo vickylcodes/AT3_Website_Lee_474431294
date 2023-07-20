@@ -163,6 +163,14 @@ h3 {
   display: flex;
 }
 
+.about-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
 .about-item,
 .trainers-item {
   width: 33.33%;
@@ -180,10 +188,12 @@ h3 {
 }
 
 .about-item p {
-  font-size: 1.5em;
+  font-size: 1.3em;
+  font-weight: 300;
   color: #f1faee;
   margin: 20px;
   text-align: justify;
+  max-width: 700px;
 }
 
 .navbar {
