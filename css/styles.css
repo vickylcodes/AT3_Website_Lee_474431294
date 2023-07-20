@@ -43,7 +43,7 @@ header {
 }
 
 .nav-link {
-  transition: 0.2s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .nav-link:hover {
@@ -282,7 +282,7 @@ h3 {
   margin: 30px;
 }
 
-#form-h1 {
+#h1-form {
   background-color: #1d3557;
   border: none;
   margin-bottom: 0;
@@ -379,6 +379,14 @@ label[for="mobile"]:after {
     line-height: 43px;
   }
 
+  a span.active {
+    background-color: #e63946;
+  }
+
+  a span:nth-child(2) {
+    background-color: #e63946;
+  }
+
   #hamburger {
     display: block;
     position: fixed;
@@ -432,7 +440,16 @@ label[for="mobile"]:after {
   }
 
   #h3-about {
-    margin: 10px;
+    margin-top: 25%;
+    margin-bottom: 0;
+  }
+
+  .about-item img {
+    display: none;
+  }
+
+  .about-item p {
+    margin: 10px 0;
   }
 
   #h3-trainers {
@@ -492,25 +509,15 @@ label[for="mobile"]:after {
     height: 70vh;
   }
 
-  .about-item img {
-    display: none;
-  }
-
-  .about-item p {
-    width: 100%;
-    text-align: justify;
-    margin: 0;
-  }
-
   .trainers-p {
     width: 90%;
     margin: 0 auto;
     margin-left: 12px;
   }
 
-  #form-h1 {
+  #h1-form {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20%;
     text-align: center;
     font-size: 3em;
   }
