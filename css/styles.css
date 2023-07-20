@@ -406,6 +406,11 @@ label[for="mobile"]:after {
     width: 300px;
   }
 
+  #gif-img img {
+    height: 200px;
+    margin-top: 18%;
+  }
+
   #h3-about {
     margin: 10px;
   }
