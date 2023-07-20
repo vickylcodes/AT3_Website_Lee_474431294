@@ -21,6 +21,54 @@ header {
   background-color: #1d3557;
 }
 
+.header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.navbar {
+  min-height: 7vh;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+#nav-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 0 50px;
+  font-size: 1em;
+}
+
+.nav-link {
+  transition: 0.2s ease-out;
+}
+
+.nav-link:hover {
+  color: #e63946;
+}
+
+#logo {
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+}
+
+#hamburger {
+  display: none;
+  position: absolute;
+  top: 38px;
+  right: -8px;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: 4px solid none;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 li {
   list-style: none;
 }
@@ -113,38 +161,6 @@ h3 {
   border-radius: 2%;
 }
 
-#maurice {
-  max-width: 100%;
-  object-fit: cover;
-  height: calc(50vh - 100px);
-}
-
-#leo {
-  background-image: url("/img/leo.jpg");
-  background-size: cover;
-  max-width: 100%;
-  height: 100vh;
-  color: #e63946;
-  font-size: 5em;
-  font-weight: bolder;
-  margin: 0;
-  padding-top: 130px;
-  padding-left: 218px;
-}
-
-#kathy {
-  background-image: url("/img/kathy.jpg");
-  background-size: cover;
-  max-width: 100%;
-  height: 100vh;
-  color: #e63946;
-  font-size: 5em;
-  font-weight: bolder;
-  margin: 0;
-  padding-top: 260px;
-  padding-left: 280px;
-}
-
 #about header,
 #trainers header,
 #classes header {
@@ -154,6 +170,35 @@ h3 {
 #about-container,
 #trainers-container {
   display: flex;
+}
+
+#maurice {
+  max-width: 100%;
+  object-fit: cover;
+  height: calc(50vh - 100px);
+}
+
+#leo {
+  background-image: url("/img/leo.jpg");
+  padding-top: 130px;
+  padding-left: 218px;
+}
+
+#kathy {
+  background-image: url("/img/kathy.jpg");
+  padding-top: 260px;
+  padding-left: 280px;
+}
+
+#leo,
+#kathy {
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh; /* Adjust the height to your preference */
+  color: #e63946;
+  font-size: 5em;
+  font-weight: bolder;
+  margin: 0;
 }
 
 .about-item {
@@ -201,48 +246,6 @@ h3 {
   max-width: 100%;
 }
 
-.navbar {
-  min-height: 7vh;
-  display: flex;
-  align-items: center;
-  padding: 15px;
-}
-
-#nav-menu {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  padding: 0 50px;
-  font-size: 1em;
-}
-
-.nav-link {
-  transition: 0.2s ease-out;
-}
-
-.nav-link:hover {
-  color: #e63946;
-}
-
-#logo {
-  font-size: 2em;
-  color: white;
-  text-decoration: none;
-}
-
-#hamburger {
-  display: none;
-  position: absolute;
-  top: 38px;
-  right: -8px;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  border: 4px solid none;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
 .timetable {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -253,12 +256,6 @@ h3 {
   border-style: inset double;
   padding: 50px;
   margin-top: 120px;
-}
-
-.header {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5em;
 }
 
 .time-slot {
@@ -434,9 +431,59 @@ label[for="mobile"]:after {
     margin: 10px;
   }
 
-  .about-item {
+  #h3-trainers {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #trainers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    margin-top: 50px;
+  }
+
+  .trainer-content {
+    width: 100%;
+    max-width: 500px; /* Limit the maximum width of the content */
+  }
+
+  .about-item,
+  .trainers-item {
     width: 100%;
     font-size: 0.78em;
+  }
+
+  .trainers-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trainers-item:nth-child(2) {
+    position: relative;
+    bottom: 100%;
+    z-index: 1;
+  }
+
+  #kathy {
+    position: relative;
+    bottom: initial;
+    left: initial;
+    z-index: 2;
+    height: 100vh;
+    margin-top: -195%;
+  }
+
+  #leo {
+    position: relative;
+    top: 205%;
+  }
+
+  #kathy,
+  #leo {
+    padding: 10%;
   }
 
   .about-item img {
@@ -447,6 +494,12 @@ label[for="mobile"]:after {
     width: 100%;
     text-align: justify;
     margin: 0;
+  }
+
+  .trainers-p {
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 12px;
   }
 
   #form-h1 {
