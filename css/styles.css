@@ -85,10 +85,21 @@ h3 {
   color: #f1faee;
 }
 
+.h3-trainers {
+  font-size: 3.5em;
+  text-align: center;
+  margin: 20px;
+}
+
+#h3-timetable {
+  margin: 50px 0 -60px 0;
+  text-align: center;
+}
+
 #gif {
   display: flex;
-  justify-content: center; /* Horizontally center the GIFs */
-  align-items: center; /* Vertically center the GIFs */
+  justify-content: center;
+  align-items: center;
   margin-bottom: 2%;
 }
 
@@ -100,24 +111,6 @@ h3 {
   border: 2px solid #e63946;
   box-shadow: 0 0 15px 5px #e63946;
   border-radius: 2%;
-}
-
-#h3-timetable {
-  margin: 50px 0 -60px 0;
-  text-align: center;
-}
-
-.trainers-h3 {
-  font-size: 3.5em;
-  text-align: center;
-  margin: 20px;
-}
-
-.trainers-p {
-  color: #f1faee;
-  font-size: 1.3em;
-  text-align: justify;
-  margin: 22px;
 }
 
 #maurice {
@@ -171,6 +164,13 @@ h3 {
   height: 100vh;
 }
 
+.trainers-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
 .about-item,
 .trainers-item {
   width: 33.33%;
@@ -187,13 +187,18 @@ h3 {
   margin: 60px;
 }
 
-.about-item p {
+.about-item p,
+.trainers-p {
   font-size: 1.3em;
   font-weight: 300;
   color: #f1faee;
   margin: 20px;
   text-align: justify;
   max-width: 700px;
+}
+
+.trainers-p {
+  max-width: 100%;
 }
 
 .navbar {
