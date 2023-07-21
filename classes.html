@@ -12,21 +12,21 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/80f05fb3e6.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/80f05fb3e6.js" crossorigin="anonymous">-</script>
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-    crossorigin="anonymous"></script>
-  <script src="script.js" type="text/javascript"></script>
+    crossorigin="anonymous">-</script>
+  <script src="script.js" type="text/javascript">-</script>
   <script>
-    $(document).ready(function () {
-      $("#hamburger").click(function () {
-        $("span").toggleClass("active");
-        $("#nav-menu").toggleClass("active");
+      $(document).ready(function () {
+        $("#hamburger").click(function () {
+          $("span").toggleClass("active");
+          $("#nav-menu").toggleClass("active");
+        });
+        $(".nav-link").click(function () {
+          $("span").removeClass("active");
+          $("#nav-menu").removeClass("active");
+        });
       });
-      $(".nav-link").click(function () {
-        $("span").removeClass("active");
-        $("#nav-menu").removeClass("active");
-      });
-    });
   </script>
   <script type="text/javascript">
     $(document).ready(function () {
@@ -37,11 +37,11 @@
 
 <body>
   <header>
-    <div id="header"></div>
+    <div id="header">-</div>
   </header>
   <h3 id="h3-timetable">Timetable</h3>
   <div id="timetable">
-    <div class="header">TIME / DAY</div>
+    <div id="time-day">TIME / DAY</div>
     <div class="day">MONDAY</div>
     <div class="day">TUESDAY</div>
     <div class="day">WEDNESDAY</div>
@@ -50,10 +50,10 @@
     <div class="day">SATURDAY</div>
 
     <div class="time">9.00 AM</div>
-    <div class="time-slot"></div>
+    <div class="time-slot">-</div>
     <div class="time-slot">Body Attack</div>
     <div class="time-slot">Body Vive</div>
-    <div class="time-slot"></div>
+    <div class="time-slot">-</div>
     <div class="time-slot">Body Pump</div>
     <div class="time-slot">Tai Chi
     </div>
@@ -86,19 +86,17 @@
     <div class="time-slot">Power Hour</div>
     <div class="time-slot">ABT</div>
     <div class="time-slot">Abs Blast</div>
-    <div class="time-slot"></div>
+    <div class="time-slot">-</div>
     <div class="time-slot">Chi Ball</div>
-    <div class="time-slot"></div>
+    <div class="time-slot">-</div>
   </div>
 
-
   <div id="timetable-mobile">
-    <div class="header">TIME / DAY</div>
     <div class="day">MONDAY</div>
     <div class="wrapper">
       <div class="expandable">
         <div class="time">9.00 AM</div>
-        <div class="time-slot"></div>
+        <div class="time-slot">-</div>
         <div class="time">11.00 AM</div>
         <div class="time-slot">Body Step</div>
         <div class="time">4.00 PM</div>
@@ -147,7 +145,7 @@
     <div class="wrapper">
       <div class="expandable">
         <div class="time">9.00 AM</div>
-        <div class="time-slot"></div>
+        <div class="time-slot">-</div>
         <div class="time">11.00 AM</div>
         <div class="time-slot">Body Combat</div>
         <div class="time">4.00 PM</div>
@@ -155,7 +153,7 @@
         <div class="time">6.00 PM</div>
         <div class="time-slot">World Dance & Dance</div>
         <div class="time">8.00 PM</div>
-        <div class="time-slot"></div>
+        <div class="time-slot">-</div>
       </div>
     </div>
 
@@ -188,16 +186,30 @@
         <div class="time">6.00 PM</div>
         <div class="time-slot">Sculpt & Combo</div>
         <div class="time">8.00 PM</div>
-        <div class="time-slot"></div>
+        <div class="time-slot">-</div>
       </div>
     </div>
-
   </div>
-
   <script>
     $(document).ready(function () {
-      $(".day").hover(function () {
-        $(".wrapper").toggleClass("open");
+      // Bind the mouseenter event to the ".day" elements
+      $(".day").mouseenter(function () {
+        $(".wrapper").removeClass("open");
+        $(".expandable").removeClass("open");
+        $(this).next(".wrapper").addClass("open");
+        $(this).next(".expandable").addClass("open");
+      });
+
+      // Bind the mouseleave event to the timetable container to handle collapse
+      $("#timetable").mouseleave(function () {
+        $(".wrapper").removeClass("open");
+        $(".expandable").removeClass("open");
+      });
+
+      // Bind the mouseleave event to each wrapper individually to handle collapse
+      $(".wrapper").mouseleave(function () {
+        $(this).removeClass("open");
+        $(this).prev(".day").removeClass("open");
       });
     });
   </script>

@@ -21,7 +21,7 @@ header {
   background-color: #1d3557;
 }
 
-.header,
+#time-day,
 .day,
 .time {
   text-align: center;
@@ -546,15 +546,6 @@ label[for="mobile"]:after {
     margin: 0 auto;
   }
 
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 5px;
-    padding: 10px;
-  }
-
   .time-slot {
     text-align: center;
     margin: 5px;
@@ -565,12 +556,11 @@ label[for="mobile"]:after {
     border-top: 1px solid #e63946;
   }
 
-  .time-slot,
-  .header {
+  .time-slot {
     flex: 1;
   }
 
-  .timetable > .header {
+  .timetable {
     font-weight: bold;
   }
 
@@ -643,6 +633,14 @@ label[for="mobile"]:after {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 15%;
+  }
+
+  #h3-timetable {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    font-size: 3.5em;
   }
 
   .day {
