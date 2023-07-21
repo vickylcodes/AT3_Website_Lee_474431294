@@ -250,7 +250,7 @@ h3 {
 
 #timetable {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-gap: 10px;
   margin: 200px;
   color: white;
@@ -370,6 +370,10 @@ label[for="mobile"]:after {
 .error-container {
   color: #e63946;
   font-size: 0.5em;
+}
+
+#timetable-mobile {
+  display: none;
 }
 
 .expandable {
