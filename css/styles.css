@@ -339,6 +339,24 @@ fieldset label.radio-label:after {
   content: "";
 }
 
+#enquiry-select {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+  color: #f1faee;
+  margin: 10px;
+  padding: 2px;
+  border: none;
+}
+
+option {
+  color: #f1faee;
+  background-color: #1d3557;
+}
+
 input:hover,
 textarea:hover {
   border-width: 2px;
