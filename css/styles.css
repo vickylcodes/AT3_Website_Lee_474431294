@@ -21,7 +21,9 @@ header {
   background-color: #1d3557;
 }
 
-.header {
+.header,
+.day,
+.time {
   text-align: center;
   font-weight: bold;
   font-size: 1.5em;
@@ -246,7 +248,7 @@ h3 {
   max-width: 100%;
 }
 
-.timetable {
+#timetable {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 10px;
@@ -265,6 +267,11 @@ h3 {
   background-color: white;
   padding: 20px;
   text-align: center;
+}
+
+.time-slot:hover {
+  cursor: pointer;
+  color: #e63946;
 }
 
 .form-container {
@@ -323,7 +330,7 @@ textarea {
   resize: vertical;
 }
 
-button {
+#contact-button {
   color: #1d3557;
   font-weight: 800;
   width: 100%;
@@ -363,6 +370,23 @@ label[for="mobile"]:after {
 .error-container {
   color: #e63946;
   font-size: 0.5em;
+}
+
+.expandable {
+  min-height: 0;
+  background: #1d3557;
+  color: white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 200ms;
+}
+
+.wrapper.open {
+  grid-template-rows: 1fr;
 }
 
 @media (max-width: 768px) {
@@ -515,6 +539,41 @@ label[for="mobile"]:after {
     margin-left: 12px;
   }
 
+  #timetable {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .time-slot {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .time-slot:not(:first-child) {
+    border-top: 1px solid #e63946;
+  }
+
+  .time-slot,
+  .header {
+    flex: 1;
+  }
+
+  .timetable > .header {
+    font-weight: bold;
+  }
+
   #h1-form {
     width: 100%;
     margin-top: 20%;
@@ -573,5 +632,25 @@ label[for="mobile"]:after {
 
   #help {
     display: none;
+  }
+
+  #timetable {
+    display: none;
+  }
+
+  #timetable-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .day {
+    color: #f1faee;
+    background-color: #457b9d;
+  }
+
+  .time {
+    background-color: #e63946;
   }
 }
