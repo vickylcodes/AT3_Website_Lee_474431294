@@ -359,7 +359,7 @@ option {
 
 input:hover,
 textarea:hover {
-  border-width: 2px;
+  border-width: 3px;
 }
 
 textarea {
@@ -665,13 +665,20 @@ footer p {
     color: white;
   }
 
-  input,
+  input:not([type="radio"]),
   textarea {
     min-width: 300px;
   }
 
+  .form-group fieldset label {
+    display: flex;
+  }
+
+  .form-group.enquiry {
+    margin-top: 0;
+  }
+
   textarea {
-    margin-top: -50px;
     min-height: 200px;
   }
 
