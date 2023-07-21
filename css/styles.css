@@ -45,7 +45,7 @@ header {
 }
 
 .nav-link {
-  transition: 0.5s ease-out;
+  transition: 0.2s ease-out;
 }
 
 .nav-link:hover {
@@ -637,7 +637,7 @@ label[for="mobile"]:after {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 15%;
+    margin-top: 20%;
   }
 
   #h3-timetable {
@@ -647,9 +647,17 @@ label[for="mobile"]:after {
     font-size: 3.5em;
   }
 
+  .day,
+  .time,
+  .time-slot {
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+
   .day {
     color: #f1faee;
     background-color: #457b9d;
+    margin-top: 10px;
   }
 
   .time {
