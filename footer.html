@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ML Strength - The Premier Health & Fitness Brand in Brisbane." />
+    <title>Header</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/80f05fb3e6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hamburger").click(function () {
+                $("span").toggleClass("active");
+                $("#nav-menu").toggleClass("active");
+            });
+            $(".nav-link").click(function () {
+                $("span").removeClass("active");
+                $("#nav-menu").removeClass("active");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <footer id="footer">
+        <section id=social-icons>
+            <a id="fb-icon" href=""><i class="fa-brands fa-facebook" style="color: #ff8551"></i></a>
+            <a id="insta-icon" href=""><i class="fa-brands fa-instagram" style="color: #ff8551"></i></a>
+            <a id="linkedin-icon" href=""><i class="fa-brands fa-linkedin" style="color: #ff8551"></i></a>
+
+        </section>
+
+        <section id="footer-details">
+            <p>Copyright &copy; 2023 Victoria Lee 474431294 | All Rights Reserved</p>
+            <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2 Level AA conformance">
+                <img height="32" width="60" src="https://www.w3.org/WAI/WCAG21/wcag2.1AA-v" alt="Level AA conformance,
+                              W3C WAI Web Content Accessibility Guidelines 2.1" />
+            </a>
+            <p>Privacy Policy | Terms & Conditions</p>
+        </section>
+
+    </footer>
+    </div>
+</body>
+
+</html>

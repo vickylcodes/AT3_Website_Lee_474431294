@@ -63,6 +63,17 @@
           <input type="email" id="email" name="email" placeholder="Enter your email" required />
           <div class="error-container"></div>
         </div>
+        <div class="form-group">
+          <fieldset>
+            <legend>Please select your preferred contact method:</legend>
+            <input type="radio" id="contact-choice-1" name="contact" value="mobile" checked>
+            <label class="radio-label" for="contact-choice-1">Email</label>
+            <input type="radio" id="contact-choice-2" name="contact" value="email">
+            <label class="radio-label" for="contact-choice-2">Mobile</label>
+            <input type="radio" id="contact-choice-3" name="contact" value="either" />
+            <label class="radio-label" for="contact-choice-3">Either</label>
+          </fieldset>
+        </div>
     </div>
     <div class="column">
       <div class="form-group textarea-group">
