@@ -41,78 +41,80 @@
 </head>
 
 <body>
-  <header>
-    <div id="header"></div>
-  </header>
-  <h1 id="h1-form">CONTACT MLS</h1>
-  <div class="form-container">
-    <div class="column">
-      <form id="contact-form" method="POST" action="process-form.php">
-        <div class="form-group">
-          <label for="first-name">First Name</label>
-          <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required />
-          <div class="error-container"></div>
-        </div>
-        <div class="form-group">
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required />
-          <div class="error-container"></div>
-        </div>
-        <div class="form-group">
-          <label for="mobile">Mobile</label>
-          <input type="tel" id="mobile" name="mobile" pattern="04\4[8]" placeholder="Enter your mobile" />
-          <div class="error-container"></div>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required />
-          <div class="error-container"></div>
-        </div>
-        <div class="form-group">
+  <div id="contact-container">
+    <header>
+      <div id="header"></div>
+    </header>
+    <h1 id="h1-form">CONTACT MLS</h1>
+    <div class="form-container">
+      <div class="column">
+        <form id="contact-form" method="POST" action="process-form.php">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required />
+            <div class="error-container"></div>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required />
+            <div class="error-container"></div>
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile</label>
+            <input type="tel" id="mobile" name="mobile" pattern="04\4[8]" placeholder="Enter your mobile" />
+            <div class="error-container"></div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            <div class="error-container"></div>
+          </div>
+          <div class="form-group">
+            <fieldset>
+              <legend>Please select your preferred contact method:</legend>
+              <input type="radio" id="contact-choice-1" name="contact" value="mobile" checked>
+              <label class="radio-label" for="contact-choice-1">Email</label>
+              <input type="radio" id="contact-choice-2" name="contact" value="email">
+              <label class="radio-label" for="contact-choice-2">Mobile</label>
+              <input type="radio" id="contact-choice-3" name="contact" value="either" />
+              <label class="radio-label" for="contact-choice-3">Either</label>
+            </fieldset>
+          </div>
+      </div>
+      <div class="column">
+        <div class="form-group enquiry">
           <fieldset>
-            <legend>Please select your preferred contact method:</legend>
-            <input type="radio" id="contact-choice-1" name="contact" value="mobile" checked>
-            <label class="radio-label" for="contact-choice-1">Email</label>
-            <input type="radio" id="contact-choice-2" name="contact" value="email">
-            <label class="radio-label" for="contact-choice-2">Mobile</label>
-            <input type="radio" id="contact-choice-3" name="contact" value="either" />
-            <label class="radio-label" for="contact-choice-3">Either</label>
+            <legend>Please select your enquiry type:</legend>
+            <select name="enquiry" id="enquiry-select">
+              <option value="">- Select your enquiry -</option>
+              <option value="membership">Membership</option>
+              <option value="franchise">Franchise</option>
+              <option value="partnership">Partnership</option>
+              <option value="media">Media</option>
+              <option value="general">General</option>
+            </select>
           </fieldset>
         </div>
-    </div>
-    <div class="column">
-      <div class="form-group enquiry">
-        <fieldset>
-          <legend>Please select your enquiry type:</legend>
-          <select name="enquiry" id="enquiry-select">
-            <option value="">- Select your enquiry -</option>
-            <option value="membership">Membership</option>
-            <option value="franchise">Franchise</option>
-            <option value="partnership">Partnership</option>
-            <option value="media">Media</option>
-            <option value="general">General</option>
-          </select>
-        </fieldset>
-      </div>
-      <div class="form-group textarea-group">
-        <label for="message">Enquiry</label>
-        <textarea id="message" name="message" rows="4" placeholder="Enter your mesage..." required></textarea>
-      </div>
-      <div class="form-group">
-        <button id="contact-button" type="submit">SUBMIT</button>
+        <div class="form-group textarea-group">
+          <label for="message">Enquiry</label>
+          <textarea id="message" name="message" rows="4" placeholder="Enter your mesage..." required></textarea>
+        </div>
+        <div class="form-group">
+          <button id="contact-button" type="submit">SUBMIT</button>
+        </div>
       </div>
     </div>
+    </form>
+    <section id="help">
+      <a href="#" id="help-link">Help</a>
+      <div id="help-popup">
+        <iframe src="https://www.youtube.com/embed/9eI84lhU7II" maxwidth="300px" height="200px" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+    <footer>
   </div>
-  </form>
-  <section id="help">
-    <a href="#" id="help-link">Help</a>
-    <div id="help-popup">
-      <iframe src="https://www.youtube.com/embed/9eI84lhU7II" maxwidth="300px" height="200px" frameborder="0"
-        allowfullscreen></iframe>
-    </div>
-  </section>
-  <footer>
-    <div id="footer"></div>
+  <div id="footer"></div>
   </footer>
   <script src="script.js"></script>
 </body>

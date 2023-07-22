@@ -21,6 +21,17 @@ header {
   background-color: #1d3557;
 }
 
+#index-container,
+#home-container,
+#classes-container,
+#contact-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 #time-day,
 .day,
 .time {
@@ -442,7 +453,7 @@ label[for="mobile"]:after {
 
 footer p {
   margin: 0 20px;
-  color: #ffdede;
+  color: #f1faee;
   font-size: 0.8em;
 }
 
