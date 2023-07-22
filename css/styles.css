@@ -180,8 +180,8 @@ h3 {
   background-color: #e63946;
 }
 
-#about-container,
-#trainers-container {
+#about-main,
+#trainers-main {
   display: flex;
 }
 
@@ -543,8 +543,12 @@ footer p {
   }
 
   #h3-about {
-    margin-top: 25%;
+    margin-top: 30%;
     margin-bottom: 0;
+  }
+
+  #about-main {
+    margin-bottom: 120px;
   }
 
   .about-item img {
@@ -561,7 +565,7 @@ footer p {
     text-align: center;
   }
 
-  #trainers-container {
+  #trainers-main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
@@ -645,7 +649,7 @@ footer p {
 
   #h1-form {
     width: 100%;
-    margin-top: 20%;
+    margin-top: 100px;
     text-align: center;
     font-size: 3em;
   }
@@ -654,7 +658,6 @@ footer p {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    margin-top: -30px;
   }
 
   .form-group label {
@@ -744,5 +747,26 @@ footer p {
 
   .time {
     background-color: #e63946;
+  }
+
+  #footer-details {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  #footer-details p {
+    font-size: 0.7em;
+  }
+
+  #social-icons {
+    margin-top: 10%;
+    font-size: 2em;
+  }
+
+  #w3c img {
+    margin: 0 auto;
   }
 }
