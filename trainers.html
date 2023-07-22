@@ -33,6 +33,11 @@
       $("#header").load("header.html");
     });
   </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#footer").load("footer.html");
+    });
+  </script>
 </head>
 
 <body>
@@ -74,6 +79,9 @@
       </div>
     </section>
   </main>
+  <footer>
+    <div id="footer"></div>
+  </footer>
   <script>
     $(document).ready(function () {
       if ($(window).width() <= 768) {

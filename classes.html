@@ -33,6 +33,11 @@
       $("#header").load("header.html");
     });
   </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#footer").load("footer.html");
+    });
+  </script>
 </head>
 
 <body>
@@ -95,9 +100,7 @@
     <div class="time-slot">Chi Ball</div>
     <div class="time-slot">-</div>
     <div class="time-slot">-</div>
-
   </div>
-
   <div id="timetable-mobile">
     <div class="day">MONDAY</div>
     <div class="wrapper">
@@ -114,8 +117,6 @@
         <div class="time-slot">Power Hour</div>
       </div>
     </div>
-
-
     <div class="day">TUESDAY</div>
     <div class="wrapper">
       <div class="expandable">
@@ -131,7 +132,6 @@
         <div class="time-slot">ABT</div>
       </div>
     </div>
-
     <div class="day">WEDNESDAY</div>
     <div class="wrapper">
       <div class="expandable">
@@ -147,7 +147,6 @@
         <div class="time-slot">Abs Blast</div>
       </div>
     </div>
-
     <div class="day">THURSDAY</div>
     <div class="wrapper">
       <div class="expandable">
@@ -163,7 +162,6 @@
         <div class="time-slot">-</div>
       </div>
     </div>
-
     <div class="day">FRIDAY</div>
     <div class="wrapper">
       <div class="expandable">
@@ -179,8 +177,6 @@
         <div class="time-slot">Chi Ball</div>
       </div>
     </div>
-
-
     <div class="day">SATURDAY</div>
     <div class="wrapper">
       <div class="expandable">
@@ -196,15 +192,16 @@
         <div class="time-slot">-</div>
       </div>
     </div>
-
     <div class="day">SUNDAY</div>
     <div class="wrapper">
       <div class="expandable">
         <div class="time">NO CLASSES</div>
-
       </div>
     </div>
   </div>
+  <footer>
+    <div id="footer"></div>
+  </footer>
   <script>
     $(document).ready(function () {
       // Bind the mouseenter event to the ".day" elements

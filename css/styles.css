@@ -10,7 +10,7 @@ html {
 
 body {
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   overflow-x: hidden;
@@ -225,13 +225,14 @@ h3 {
 
 .about-item img,
 .trainers-item img {
+  display: block;
   width: 100%;
   height: 100vh;
   object-fit: cover;
 }
 
 .about-item h3 {
-  margin: 60px;
+  margin: 10%;
 }
 
 .about-item p,
@@ -436,20 +437,24 @@ label[for="mobile"]:after {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  height: auto;
   width: 100%;
 }
 
 footer p {
-  margin: 0;
+  margin: 0 20px;
   color: #ffdede;
   font-size: 0.8em;
+}
+
+#w3c img {
+  margin-right: 165px;
 }
 
 #social-icons {
   display: flex;
   justify-content: center;
+  font-size: 3em;
+  gap: 20px;
 }
 
 @media (max-width: 768px) {
