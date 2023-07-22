@@ -41,47 +41,49 @@
 </head>
 
 <body>
-  <header>
-    <div id="header"></div>
-  </header>
-  <main id="trainers-main">
-    <section class="trainers-item">
-      <div class="trainer-content">
-        <h3 class="h3-trainers" id="leo">Leo</h3>
-      </div>
-    </section>
-    <section class="trainers-item">
-      <div class="trainer-content">
-        <h3 class="h3-trainers">Maurice Lidman</h3>
-        <img src="img/maurice.jpg" alt="Man training boxer" id="maurice" />
-        <p class="trainers-p">
-          Our owner and boxing trainer
-          <span style="color: #e63946; font-size: 1.2em">Maurice Lidman</span>
-          holds decades of experience in the ring. Maurice shares his expertise
-          by running exhilarating, high-energy boxing classes. Whether you're a
-          beginner or an intermediate boxer, join us for a fun and rewarding
-          experience, gaining valuable skills and enjoying one of the best
-          cardiovascular workouts available.
-        </p>
-        <h3 class="h3-trainers">Our Trainers</h3>
-        <p class="trainers-p">
-          Our trainers,
-          <span style="color: #e63946; font-size: 1.2em">Kathy</span> (right)
-          and <span style="color: #e63946; font-size: 1.2em">Leo</span> (left)
-          are all Les Mills accredited instructors and are second to none. Both trainers
-          hold Bachelor Degrees in Human Movements.
-        </p>
-      </div>
-    </section>
-    <section class="trainers-item">
-      <div class="trainer-content">
-        <h3 class="h3-trainers" id="kathy">Kathy</h3>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div id="footer"></div>
-  </footer>
+  <div id="trainers-container">
+    <header>
+      <div id="header"></div>
+    </header>
+    <main id="trainers-main">
+      <section class="trainers-item">
+        <div class="trainer-content">
+          <h3 class="h3-trainers" id="leo">Leo</h3>
+        </div>
+      </section>
+      <section class="trainers-item">
+        <div class="trainer-content">
+          <h3 class="h3-trainers">Maurice Lidman</h3>
+          <img src="img/maurice.jpg" alt="Man training boxer" id="maurice" />
+          <p class="trainers-p">
+            Our owner and boxing trainer
+            <span style="color: #e63946; font-size: 1.2em">Maurice Lidman</span>
+            holds decades of experience in the ring. Maurice shares his expertise
+            by running exhilarating, high-energy boxing classes. Whether you're a
+            beginner or an intermediate boxer, join us for a fun and rewarding
+            experience, gaining valuable skills and enjoying one of the best
+            cardiovascular workouts available.
+          </p>
+          <h3 class="h3-trainers" id="our-trainers">Our Trainers</h3>
+          <p class="trainers-p">
+            Our trainers,
+            <span style="color: #e63946; font-size: 1.2em">Kathy</span> (right)
+            and <span style="color: #e63946; font-size: 1.2em">Leo</span> (left)
+            are all Les Mills accredited instructors and are second to none. Both trainers
+            hold Bachelor Degrees in Human Movements.
+          </p>
+        </div>
+      </section>
+      <section class="trainers-item">
+        <div class="trainer-content">
+          <h3 class="h3-trainers" id="kathy">Kathy</h3>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footer"></div>
+    </footer>
+  </div>
   <script>
     $(document).ready(function () {
       if ($(window).width() <= 768) {

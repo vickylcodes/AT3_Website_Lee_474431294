@@ -32,6 +32,10 @@ header {
   justify-content: space-between;
 }
 
+#trainers-container {
+  height: 100%;
+}
+
 #time-day,
 .day,
 .time {
@@ -559,22 +563,22 @@ footer p {
     margin: 10px 0;
   }
 
-  #h3-trainers {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
+  .h3-trainers {
+    margin-top: -500px;
+  }
+
+  #our-trainers {
+    margin-top: 30px;
   }
 
   #trainers-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-items: center;
-    margin-top: 320px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
   }
 
   .trainer-content {
     width: 100%;
-    max-width: 500px; /* Limit the maximum width of the content */
   }
 
   .about-item,
@@ -595,31 +599,24 @@ footer p {
     z-index: 1;
   }
 
-  #kathy {
-    position: relative;
-    bottom: initial;
-    left: initial;
-    z-index: 2;
-    margin-top: -180%;
-    padding: 38% 0 0 45%;
-  }
-
-  #leo {
-    position: relative;
-    top: 200%;
-    padding: 40% 30% 0 0;
-  }
-
   #kathy,
   #leo {
     font-size: 4em;
-    height: 70vh;
+    height: 80vh;
+    padding: 20px 0;
+  }
+
+  #kathy {
+    margin-bottom: 590px;
+  }
+
+  #leo {
+    position: relative;
+    top: 1600px;
   }
 
   .trainers-p {
-    width: 90%;
-    margin: 0 auto;
-    margin-left: 12px;
+    margin: 20px;
   }
 
   #timetable {
