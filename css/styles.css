@@ -75,7 +75,7 @@ header {
 
 #hamburger {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 38px;
   right: -8px;
   transform: translate(-50%, -50%);

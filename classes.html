@@ -16,28 +16,7 @@
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous">-</script>
   <script src="script.js" type="text/javascript">-</script>
-  <script>
-      $(document).ready(function () {
-        $("#hamburger").click(function () {
-          $("span").toggleClass("active");
-          $("#nav-menu").toggleClass("active");
-        });
-        $(".nav-link").click(function () {
-          $("span").removeClass("active");
-          $("#nav-menu").removeClass("active");
-        });
-      });
-  </script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $("#header").load("header.html");
-    });
-  </script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $("#footer").load("footer.html");
-    });
-  </script>
+
 </head>
 
 <body>
@@ -204,6 +183,11 @@
       <div id="footer"></div>
     </footer>
   </div>
+  <script type="text/javascript">
+      $(document).ready(function () {
+        $("#header").load("header.html");
+      });
+  </script>
   <script>
     $(document).ready(function () {
       // Bind the mouseenter event to the ".day" elements
@@ -225,6 +209,11 @@
         $(this).removeClass("open");
         $(this).prev(".day").removeClass("open");
       });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#footer").load("footer.html");
     });
   </script>
 </body>
