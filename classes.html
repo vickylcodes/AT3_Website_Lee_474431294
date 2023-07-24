@@ -20,7 +20,12 @@
 <body>
   <div id="classes-container">
     <header>
-      <div id="header">-</div>
+      <div id="header"></div>
+      <script>
+        $(document).ready(function () {
+          $("#header").load("header.html");
+        });
+      </script>
     </header>
     <h3 id="h3-timetable">Timetable</h3>
     <div id="timetable">
@@ -179,12 +184,12 @@
     </div>
     <footer>
       <div id="footer"></div>
+      <script>    $(document).ready(function () {
+          $("#footer").load("footer.html");
+        });
+      </script>
     </footer>
   </div>
-  <script>      $(document).ready(function () {
-      $("#header").load("header.html");
-    });
-  </script>
   <script>
     $(document).ready(function () {
       // Bind the mouseenter event to the ".day" elements
@@ -206,10 +211,6 @@
         $(this).removeClass("open");
         $(this).prev(".day").removeClass("open");
       });
-    });
-  </script>
-  <script>    $(document).ready(function () {
-      $("#footer").load("footer.html");
     });
   </script>
   <script src="script.js"></script>

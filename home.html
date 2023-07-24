@@ -17,23 +17,6 @@
     crossorigin="anonymous"></script>
   <script>
     $(document).ready(function () {
-      $("#hamburger").click(function () {
-        $("span").toggleClass("active");
-        $("#nav-menu").toggleClass("active");
-      });
-      $(".nav-link").click(function () {
-        $("span").removeClass("active");
-        $("#nav-menu").removeClass("active");
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $("#header").load("header.html");
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
       $("#gif").load("gif.html");
     });
   </script>
@@ -48,6 +31,11 @@
   <div id="home-container">
     <header>
       <div id="header"></div>
+      <script>
+        $(document).ready(function () {
+          $("#header").load("header.html");
+        });
+      </script>
     </header>
     <main>
       <div id="gif"></div>

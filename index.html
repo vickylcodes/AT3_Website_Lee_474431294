@@ -15,47 +15,35 @@
   <script src="https://kit.fontawesome.com/80f05fb3e6.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function () {
-      $("#hamburger").click(function () {
-        $("span").toggleClass("active");
-        $("#nav-menu").toggleClass("active");
-      });
-      $(".nav-link").click(function () {
-        $("span").removeClass("active");
-        $("#nav-menu").removeClass("active");
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $("#header").load("header.html");
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $("#gif").load("gif.html");
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $("#footer").load("footer.html");
-    });
-  </script>
 </head>
 
 <body>
   <div id="index-container">
     <header>
       <div id="header"></div>
+      <script>
+        $(document).ready(function () {
+          $("#header").load("header.html");
+        });
+      </script>
     </header>
     <main>
       <div id="gif"></div>
+      <script>
+        $(document).ready(function () {
+          $("#gif").load("gif.html");
+        });
+      </script>
       <h1>POWER UP</h1>
       <h2>AT ML STRENGTH</h2>
     </main>
     <footer>
       <div id="footer"></div>
+      <script>
+        $(document).ready(function () {
+          $("#footer").load("footer.html");
+        });
+      </script>
     </footer>
   </div>
   <script src="script.js"></script>
