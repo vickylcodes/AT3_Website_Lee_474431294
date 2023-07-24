@@ -127,3 +127,15 @@ $(document).ready(function () {
     errorContainer.innerHTML = "";
   }
 });
+
+$(document).ready(function () {
+  $("#hamburger").click(function () {
+    $("span").toggleClass("active");
+    $("#nav-menu").toggleClass("active");
+  });
+
+  $(".nav-link").click(function () {
+    $("span").removeClass("active");
+    $("#nav-menu").removeClass("active");
+  });
+});
