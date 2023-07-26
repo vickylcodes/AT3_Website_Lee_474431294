@@ -453,7 +453,7 @@ textarea {
   padding: 10px;
 }
 
-#help {
+#help-section {
   display: block;
   margin: 0 auto;
   margin-top: -30px;
@@ -463,6 +463,11 @@ textarea {
 #help-link {
   color: white;
 }
+
+#question-icon {
+  color: #f1faee;
+}
+
 #help-link:hover {
   text-decoration: none;
 }
@@ -793,7 +798,7 @@ footer p {
     margin-bottom: -20px;
   }
 
-  #help {
+  #help-section {
     display: none;
   }
 
@@ -971,7 +976,7 @@ footer p {
     margin-bottom: -20px;
   }
 
-  #help {
+  #help-section {
     display: none;
   }
 }
