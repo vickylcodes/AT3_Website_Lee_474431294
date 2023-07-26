@@ -836,6 +836,146 @@ footer p {
   }
 }
 
+@media (max-width: 1470px) {
+  #classes-container {
+    min-height: 0;
+  }
+
+  #timetable-h3 {
+    margin: 80px;
+  }
+
+  #timetable-p,
+  #timetable-p-update {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px;
+  }
+
+  #timetable {
+    display: none;
+  }
+
+  #timetable-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .time-slot {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .time-slot:not(:first-child) {
+    border-top: 1px solid #e63946;
+  }
+
+  .time-slot {
+    flex: 1;
+  }
+
+  .timetable {
+    font-weight: bold;
+  }
+
+  .day,
+  .time,
+  .time-slot {
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+
+  .day {
+    color: #f1faee;
+    background-color: #457b9d;
+    margin-top: 10px;
+  }
+
+  .time {
+    background-color: #e63946;
+  }
+
+  #h1-form {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 3em;
+  }
+
+  #contact-section {
+    text-align: center;
+  }
+
+  #phone-email-section {
+    text-align: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
+
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .form-group label {
+    display: none;
+  }
+
+  input:focus,
+  textarea:focus {
+    background-color: #457b9d;
+  }
+
+  input:valid,
+  textarea:valid {
+    border-width: 3px;
+  }
+
+  input:invalid,
+  textarea:invalid {
+    border-color: #e63946;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: white;
+  }
+
+  input:not([type="radio"]),
+  textarea {
+    min-width: 300px;
+  }
+
+  .form-group fieldset label {
+    display: flex;
+  }
+
+  .form-group.enquiry {
+    margin-top: 0;
+  }
+
+  textarea {
+    min-height: 200px;
+  }
+
+  input[type="tel"] {
+    display: none;
+  }
+
+  .textarea-group {
+    margin-bottom: -20px;
+  }
+
+  #help {
+    display: none;
+  }
+}
+
 @media (max-width: 360px) {
   #contact-section p {
     font-size: 1.2em;
