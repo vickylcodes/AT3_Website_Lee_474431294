@@ -156,11 +156,6 @@ h3 {
   margin: 20px;
 }
 
-#h3-timetable {
-  margin: 50px 0 -60px 0;
-  text-align: center;
-}
-
 #gif {
   display: flex;
   justify-content: center;
@@ -180,7 +175,8 @@ h3 {
 
 #about header,
 #trainers header,
-#classes header {
+#classes header,
+#contact header {
   background-color: #e63946;
 }
 
@@ -264,16 +260,37 @@ h3 {
   max-width: 100%;
 }
 
+#timetable-h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 3.5em;
+  margin: 50px;
+}
+
+#timetable-p,
+#timetable-p-update {
+  display: flex;
+  justify-content: center;
+}
+
+#timetable-p {
+  color: #f1faee;
+}
+
+#timetable-p-update {
+  color: #e63946;
+}
+
 #timetable {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 10px;
   margin: 200px;
+  margin-top: 10px;
+  padding: 50px;
   color: white;
   border: 10px white;
   border-style: inset double;
-  padding: 50px;
-  margin-top: 120px;
 }
 
 .time-slot {
@@ -381,6 +398,42 @@ textarea:hover {
 textarea {
   min-height: 300px;
   resize: vertical;
+}
+
+#phone-email-section {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  color: #f1faee;
+}
+
+#phone-email-section a {
+  color: #f1faee;
+}
+
+#phone-email-section a:active {
+  color: #f1faee;
+}
+
+#contact-h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  margin: 20px;
+}
+
+#contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #e63946;
+}
+
+#contact-section p {
+  font-size: 1.5em;
 }
 
 #contact-button {
@@ -619,11 +672,24 @@ footer p {
     margin: 20px;
   }
 
+  #timetable-h3 {
+    margin: 100px;
+    margin-bottom: 10px;
+  }
+
+  #timetable-p {
+    text-align: center;
+  }
+
   #timetable {
-    display: flex;
-    flex-direction: column;
+    display: none;
+  }
+
+  #timetable-mobile {
     width: 100%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .time-slot {
@@ -708,25 +774,6 @@ footer p {
 
   #help {
     display: none;
-  }
-
-  #timetable {
-    display: none;
-  }
-
-  #timetable-mobile {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 20%;
-  }
-
-  #h3-timetable {
-    display: flex;
-    justify-content: center;
-    margin-top: 20%;
-    font-size: 3.5em;
   }
 
   .day,
