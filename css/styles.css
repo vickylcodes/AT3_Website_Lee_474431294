@@ -10,7 +10,7 @@ html {
 
 body {
   min-height: 100vh;
-  width: 100%;
+  width: 100;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   overflow-x: hidden;
@@ -147,7 +147,7 @@ h3 {
   font-size: 4em;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  color: #f1faee;
+  color: white;
 }
 
 .h3-trainers {
@@ -250,7 +250,7 @@ h3 {
 .trainers-p {
   font-size: 1.3em;
   font-weight: 300;
-  color: #f1faee;
+  color: white;
   margin: 20px;
   text-align: justify;
   max-width: 700px;
@@ -274,7 +274,7 @@ h3 {
 }
 
 #timetable-p {
-  color: #f1faee;
+  color: white;
 }
 
 #timetable-p-update {
@@ -389,14 +389,14 @@ fieldset label.radio-label:after {
   text-align: center;
   width: 100%;
   background-color: transparent;
-  color: #f1faee;
+  color: white;
   margin: 10px;
   padding: 2px;
   border: none;
 }
 
 option {
-  color: #f1faee;
+  color: white;
   background-color: #1d3557;
 }
 
@@ -414,15 +414,15 @@ textarea {
   display: flex;
   justify-content: center;
   gap: 100px;
-  color: #f1faee;
+  color: white;
 }
 
 #phone-email-section a {
-  color: #f1faee;
+  color: white;
 }
 
 #phone-email-section a:active {
-  color: #f1faee;
+  color: white;
 }
 
 #contact-h2 {
@@ -465,7 +465,7 @@ textarea {
 }
 
 #question-icon {
-  color: #f1faee;
+  color: white;
 }
 
 #help-link:hover {
@@ -525,7 +525,7 @@ label[for="mobile"]:after {
 
 footer p {
   margin: 0 20px;
-  color: #f1faee;
+  color: white;
   font-size: 0.8em;
 }
 
@@ -813,7 +813,7 @@ footer p {
   }
 
   .day {
-    color: #f1faee;
+    color: white;
     background-color: #457b9d;
     margin-top: 10px;
   }
@@ -886,7 +886,7 @@ footer p {
   }
 
   .day {
-    color: #f1faee;
+    color: white;
     background-color: #457b9d;
     margin-top: 10px;
   }
