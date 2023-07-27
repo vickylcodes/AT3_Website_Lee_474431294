@@ -688,12 +688,15 @@ footer p {
   }
 
   #timetable-h3 {
-    margin: 100px;
-    margin-bottom: 10px;
+    margin-top: 100px;
+    margin-bottom: 0;
   }
 
-  #timetable-p {
+  p#timetable-p,
+  p#timetable-p-update {
     text-align: center;
+    font-size: 1.5em;
+    margin: 10px 5px;
   }
 
   #timetable {
@@ -844,17 +847,6 @@ footer p {
 @media (max-width: 1470px) {
   #classes-container {
     min-height: 0;
-  }
-
-  #timetable-h3 {
-    margin: 80px;
-  }
-
-  #timetable-p,
-  #timetable-p-update {
-    text-align: center;
-    font-size: 1.5em;
-    margin: 10px;
   }
 
   #timetable {
