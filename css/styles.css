@@ -988,6 +988,11 @@ footer p {
 }
 
 @media (max-width: 360px) {
+  #kathy,
+  #leo {
+    height: 80vh;
+  }
+
   #contact-section p {
     font-size: 1.2em;
   }
