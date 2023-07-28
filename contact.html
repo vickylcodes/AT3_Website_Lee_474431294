@@ -1,121 +1,177 @@
 <!DOCTYPE html>
 <html id="contact" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ML Strength - Health and Fitness" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/80f05fb3e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ML Strength - Health and Fitness" />
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="css/styles.css" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/80f05fb3e6.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-    crossorigin="anonymous"></script>
-</head>
+  <body>
+    <div id="contact-container">
+      <header>
+        <div id="header"></div>
+        <script>
+          $(document).ready(function () {
+            $("#header").load("header.html");
+          });
+        </script>
+      </header>
+      <h1 id="h1-form">CONTACT MLS</h1>
+      <section id="contact-section">
+        <h2 id="contact-h2">OPEN 24/7</h2>
+        <p>NO OBLIGATION, NO PRESSURE.</p>
+        <p>$10 CASUAL VISIT RATE.</p>
+      </section>
+      <section id="phone-email-section">
+        <p>Phone: <a href="tel+07516216218">(07) 516 216 218</a></p>
+        <p>Email: <a href="mailto:MLS@gmail.com">MLS@gmail.com</a></p>
+      </section>
+      <h3 id="form-h3">FORM</h3>
+      <div class="form-container">
+        <div class="column">
+          <form id="contact-form" method="POST" action="process-form.php">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Enter your first name"
+                required
+              />
+              <div class="error-container"></div>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Enter your last name"
+                required
+              />
+              <div class="error-container"></div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+              <div class="error-container"></div>
+            </div>
+            <div class="form-group">
+              <label for="mobile">Mobile</label>
+              <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                pattern="04\4[8]"
+                placeholder="Enter your mobile"
+              />
+              <div class="error-container"></div>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>Please select your preferred contact method:</legend>
+                <input
+                  type="radio"
+                  id="contact-choice-1"
+                  name="contact"
+                  value="mobile"
+                  checked
+                />
+                <label class="radio-label" for="contact-choice-1">Email</label>
+                <input
+                  type="radio"
+                  id="contact-choice-2"
+                  name="contact"
+                  value="email"
+                />
+                <label class="radio-label" for="contact-choice-2">Mobile</label>
+                <input
+                  type="radio"
+                  id="contact-choice-3"
+                  name="contact"
+                  value="either"
+                />
+                <label class="radio-label" for="contact-choice-3">Either</label>
+              </fieldset>
+            </div>
+          </form>
+        </div>
 
-<body>
-  <div id="contact-container">
-    <header>
-      <div id="header"></div>
-      <script>
-        $(document).ready(function () {
-          $("#header").load("header.html");
-        });
-      </script>
-    </header>
-    <h1 id="h1-form">CONTACT MLS</h1>
-    <section id="contact-section">
-      <h2 id="contact-h2">OPEN 24/7</h2>
-      <p>NO OBLIGATION, NO PRESSURE.</p>
-      <p>$10 CASUAL VISIT RATE.</p>
-    </section>
-    <section id="phone-email-section">
-      <p>Phone: <a href="tel+07516216218">(07) 516 216 218</a></p>
-      <p> Email: <a href="mailto:MLS@gmail.com">MLS@gmail.com</a></p>
-    </section>
-    <h3 id="form-h3">FORM</h3>
-    <div class="form-container">
-      <div class="column">
-        <form id="contact-form" method="POST" action="process-form.php">
-          <div class="form-group">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required />
-            <div class="error-container"></div>
-          </div>
-          <div class="form-group">
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required />
-            <div class="error-container"></div>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required />
-            <div class="error-container"></div>
-          </div>
-          <div class="form-group">
-            <label for="mobile">Mobile</label>
-            <input type="tel" id="mobile" name="mobile" pattern="04\4[8]" placeholder="Enter your mobile" />
-            <div class="error-container"></div>
-          </div>
-          <div class="form-group">
+        <div class="column">
+          <div class="form-group enquiry">
             <fieldset>
-              <legend>Please select your preferred contact method: </legend>
-              <input type="radio" id="contact-choice-1" name="contact" value="mobile" checked>
-              <label class="radio-label" for="contact-choice-1">Email</label>
-              <input type="radio" id="contact-choice-2" name="contact" value="email">
-              <label class="radio-label" for="contact-choice-2">Mobile</label>
-              <input type="radio" id="contact-choice-3" name="contact" value="either" />
-              <label class="radio-label" for="contact-choice-3">Either</label>
+              <legend>Please select your enquiry type:</legend>
+              <select name="enquiry" id="enquiry-select">
+                <option value="">- Select your enquiry -</option>
+                <option value="membership">Membership</option>
+                <option value="franchise">Franchise</option>
+                <option value="partnership">Partnership</option>
+                <option value="media">Media</option>
+                <option value="general">General</option>
+              </select>
             </fieldset>
           </div>
-
+          <div class="form-group textarea-group">
+            <label for="message">Enquiry</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Enter your mesage..."
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button id="contact-button" type="submit">SUBMIT</button>
+          </div>
+        </div>
       </div>
-      <div class="column">
-        <div class="form-group enquiry">
-          <fieldset>
-            <legend>Please select your enquiry type:</legend>
-            <select name="enquiry" id="enquiry-select">
-              <option value="">- Select your enquiry -</option>
-              <option value="membership">Membership</option>
-              <option value="franchise">Franchise</option>
-              <option value="partnership">Partnership</option>
-              <option value="media">Media</option>
-              <option value="general">General</option>
-            </select>
-          </fieldset>
-        </div>
-        <div class="form-group textarea-group">
-          <label for="message">Enquiry</label>
-          <textarea id="message" name="message" rows="4" placeholder="Enter your mesage..." required></textarea>
-        </div>
-        <div class="form-group">
-          <button id="contact-button" type="submit">SUBMIT</button>
+
+      <div id="help-section">
+        <a href="#" id="help-link">Help</a>
+        <i id="question-icon" class="fa-regular fa-circle-question"></i>
+        <div id="help-popup">
+          <iframe
+            src="https://www.youtube.com/embed/9eI84lhU7II"
+            height="200"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>
-    </form>
-    <section id="help-section">
-      <a href="#" id="help-link">Help</a>
-      <i id="question-icon" class="fa-regular fa-circle-question"></i>
-      <div id="help-popup">
-        <iframe src="https://www.youtube.com/embed/9eI84lhU7II" maxwidth="300px" height="200px" frameborder="0"
-          allowfullscreen></iframe>
-      </div>
-    </section>
-  </div>
-  <footer>
-    <div id="footer"></div>
-    <script>
-      $(document).ready(function () {
-        $("#footer").load("footer.html");
-      });
-    </script>
-  </footer>
-  <script src="script.js"></script>
-</body>
 
+    <footer>
+      <div id="footer"></div>
+      <script>
+        $(document).ready(function () {
+          $("#footer").load("footer.html");
+        });
+      </script>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
