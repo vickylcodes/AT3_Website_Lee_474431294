@@ -145,7 +145,7 @@ h3 {
   background-color: #e63946;
 }
 
-.h3-trainers {
+.trainers-h3 {
   font-size: 3.5em;
   text-align: center;
   margin: 20px;
@@ -627,7 +627,7 @@ footer p {
     margin: 10px 0;
   }
 
-  .h3-trainers {
+  .trainers-h3 {
     margin-top: -500px;
   }
 
