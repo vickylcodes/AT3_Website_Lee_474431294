@@ -212,11 +212,11 @@ h3 {
   padding-left: 280px;
 }
 
-#leo,
-#kathy {
+#kathy,
+#leo {
   background-size: cover;
   max-width: 100%;
-  height: 100vh; /* Adjust the height to your preference */
+  height: 1000px;
   color: #e63946;
   font-size: 5em;
   font-weight: bolder;
@@ -535,6 +535,154 @@ footer p {
   gap: 20px;
 }
 
+@media (max-width: 1470px) and (min-width: 768px) {
+  #gif-img img {
+    height: 288px;
+  }
+
+  .about-item p,
+  .trainers-p {
+    font-size: 1em;
+  }
+
+  .trainers-h3 {
+    font-size: 2.5em;
+  }
+
+  #kathy,
+  #leo {
+    font-size: 3em;
+    height: 800px;
+  }
+
+  #kathy {
+    padding-top: 220px;
+  }
+
+  #timetable {
+    display: none;
+  }
+
+  #timetable-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .time-slot {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .time-slot:not(:first-child) {
+    border-top: 1px solid #e63946;
+  }
+
+  .time-slot {
+    flex: 1;
+  }
+
+  .timetable {
+    font-weight: bold;
+  }
+
+  .day,
+  .time,
+  .time-slot {
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+
+  .day {
+    color: white;
+    background-color: #457b9d;
+    margin-top: 10px;
+  }
+
+  .time {
+    background-color: #e63946;
+  }
+
+  #h1-form {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 3em;
+  }
+
+  #contact-section {
+    text-align: center;
+  }
+
+  #phone-email-section {
+    text-align: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
+
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .form-group label {
+    display: none;
+  }
+
+  input:focus,
+  textarea:focus {
+    background-color: #457b9d;
+  }
+
+  input:valid,
+  textarea:valid {
+    border-width: 3px;
+  }
+
+  input:invalid,
+  textarea:invalid {
+    border-color: #e63946;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: white;
+  }
+
+  input:not([type="radio"]),
+  textarea {
+    min-width: 300px;
+  }
+
+  .form-group fieldset label {
+    display: flex;
+  }
+
+  .form-group.enquiry {
+    margin-top: 0;
+  }
+
+  textarea {
+    min-height: 200px;
+  }
+
+  input[type="tel"] {
+    display: none;
+  }
+
+  .textarea-group {
+    margin-bottom: -20px;
+  }
+
+  #help-section {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     position: fixed;
@@ -665,7 +813,7 @@ footer p {
   #kathy,
   #leo {
     font-size: 4em;
-    height: 80vh;
+    height: 70vh;
     padding: 20px 0;
   }
 
@@ -836,131 +984,6 @@ footer p {
 
   #w3c img {
     margin: 0 auto;
-  }
-}
-
-@media (max-width: 1470px) {
-  #timetable {
-    display: none;
-  }
-
-  #timetable-mobile {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .time-slot {
-    text-align: center;
-    margin: 5px;
-    padding: 10px;
-  }
-
-  .time-slot:not(:first-child) {
-    border-top: 1px solid #e63946;
-  }
-
-  .time-slot {
-    flex: 1;
-  }
-
-  .timetable {
-    font-weight: bold;
-  }
-
-  .day,
-  .time,
-  .time-slot {
-    border-radius: 5px;
-    margin: 0 10px;
-  }
-
-  .day {
-    color: white;
-    background-color: #457b9d;
-    margin-top: 10px;
-  }
-
-  .time {
-    background-color: #e63946;
-  }
-
-  #h1-form {
-    width: 100%;
-    margin-top: 100px;
-    text-align: center;
-    font-size: 3em;
-  }
-
-  #contact-section {
-    text-align: center;
-  }
-
-  #phone-email-section {
-    text-align: center;
-    gap: 20px;
-    margin-top: 20px;
-    margin-bottom: -20px;
-  }
-
-  .form-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-
-  .form-group label {
-    display: none;
-  }
-
-  input:focus,
-  textarea:focus {
-    background-color: #457b9d;
-  }
-
-  input:valid,
-  textarea:valid {
-    border-width: 3px;
-  }
-
-  input:invalid,
-  textarea:invalid {
-    border-color: #e63946;
-  }
-
-  input::placeholder,
-  textarea::placeholder {
-    color: white;
-  }
-
-  input:not([type="radio"]),
-  textarea {
-    min-width: 300px;
-  }
-
-  .form-group fieldset label {
-    display: flex;
-  }
-
-  .form-group.enquiry {
-    margin-top: 0;
-  }
-
-  textarea {
-    min-height: 200px;
-  }
-
-  input[type="tel"] {
-    display: none;
-  }
-
-  .textarea-group {
-    margin-bottom: -20px;
-  }
-
-  #help-section {
-    display: none;
   }
 }
 
