@@ -398,7 +398,7 @@ option {
 
 input:hover,
 textarea:hover {
-  border-width: 3px;
+  border-width: 2px;
 }
 
 textarea {
