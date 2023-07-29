@@ -1,222 +1,229 @@
 <!DOCTYPE html>
 <html id="classes" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ML Strength - Health and Fitness" />
+    <title>ML Strength Class Timetable</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/80f05fb3e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ML Strength - Health and Fitness" />
-  <title>Classes</title>
-  <link rel="stylesheet" href="css/styles.css" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/80f05fb3e6.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-    crossorigin="anonymous"></script>
-</head>
+  <body>
+    <div id="classes-container">
+      <header>
+        <div id="header"></div>
+        <script>
+          $(document).ready(function () {
+            $("#header").load("header.html");
+          });
+        </script>
+      </header>
+      <h3 id="timetable-h3">Timetable</h3>
+      <p id="timetable-p">
+        Same schedule across Ashgrove, Brisbane City, Chermside, Graceville and
+        Westlake clubs.
+      </p>
+      <p id="timetable-p-update">* Timetable updated weekly every Sunday. *</p>
+      <div id="timetable">
+        <div id="time-day">TIME / DAY</div>
+        <div class="day">MONDAY</div>
+        <div class="day">TUESDAY</div>
+        <div class="day">WEDNESDAY</div>
+        <div class="day">THURSDAY</div>
+        <div class="day">FRIDAY</div>
+        <div class="day">SATURDAY</div>
+        <div class="day">SUNDAY</div>
 
-<body>
-  <div id="classes-container">
-    <header>
-      <div id="header"></div>
-      <script>
-        $(document).ready(function () {
-          $("#header").load("header.html");
-        });
-      </script>
-    </header>
-    <h3 id="timetable-h3">Timetable</h3>
-    <p id="timetable-p">Same schedule across Ashgrove, Brisbane City, Chermside, Graceville and Westlake clubs.</p>
-    <p id="timetable-p-update">* Timetable updated weekly every Sunday. *</p>
-    <div id="timetable">
-      <div id="time-day">TIME / DAY</div>
-      <div class="day">MONDAY</div>
-      <div class="day">TUESDAY</div>
-      <div class="day">WEDNESDAY</div>
-      <div class="day">THURSDAY</div>
-      <div class="day">FRIDAY</div>
-      <div class="day">SATURDAY</div>
-      <div class="day">SUNDAY</div>
+        <div class="time">9.00 AM</div>
+        <div class="time-slot">-</div>
+        <div class="time-slot">Body Attack</div>
+        <div class="time-slot">Body Vive</div>
+        <div class="time-slot">-</div>
+        <div class="time-slot">Body Pump</div>
+        <div class="time-slot">Tai Chi</div>
+        <div class="time-slot">-</div>
 
+        <div class="time">11.00 AM</div>
+        <div class="time-slot">Body Step</div>
+        <div class="time-slot">RPM</div>
+        <div class="time-slot">Body Balance</div>
+        <div class="time-slot">Body Combat</div>
+        <div class="time-slot">Body Jam</div>
+        <div class="time-slot">Zumba</div>
+        <div class="time-slot">-</div>
 
-      <div class="time">9.00 AM</div>
-      <div class="time-slot">-</div>
-      <div class="time-slot">Body Attack</div>
-      <div class="time-slot">Body Vive</div>
-      <div class="time-slot">-</div>
-      <div class="time-slot">Body Pump</div>
-      <div class="time-slot">Tai Chi</div>
-      <div class="time-slot">-</div>
+        <div class="time">4.00 PM</div>
+        <div class="time-slot">Cycle</div>
+        <div class="time-slot">Cycle Extreme</div>
+        <div class="time-slot">Pilates</div>
+        <div class="time-slot">Yoga</div>
+        <div class="time-slot">Aqua Fit & Aqua Mode</div>
+        <div class="time-slot">Boxing & TAE Box</div>
+        <div class="time-slot">-</div>
 
-      <div class="time">11.00 AM</div>
-      <div class="time-slot">Body Step</div>
-      <div class="time-slot">RPM</div>
-      <div class="time-slot">Body Balance</div>
-      <div class="time-slot">Body Combat</div>
-      <div class="time-slot">Body Jam</div>
-      <div class="time-slot">Zumba</div>
-      <div class="time-slot">-</div>
+        <div class="time">6.00 PM</div>
+        <div class="time-slot">Step Moves, Step Basic & Step Burner</div>
+        <div class="time-slot">Rejuvenate, Low Impact & Gentle Fitness</div>
+        <div class="time-slot">Cardio Blitz & Cardio Circuit</div>
+        <div class="time-slot">World Dance & Dance</div>
+        <div class="time-slot">Hilo & Fat Burner</div>
+        <div class="time-slot">Sculpt & Combo</div>
+        <div class="time-slot">-</div>
 
-      <div class="time">4.00 PM</div>
-      <div class="time-slot">Cycle</div>
-      <div class="time-slot">Cycle Extreme</div>
-      <div class="time-slot">Pilates</div>
-      <div class="time-slot">Yoga</div>
-      <div class="time-slot">Aqua Fit & Aqua Mode</div>
-      <div class="time-slot">Boxing & TAE Box</div>
-      <div class="time-slot">-</div>
-
-      <div class="time">6.00 PM</div>
-      <div class="time-slot">Step Moves, Step Basic & Step Burner</div>
-      <div class="time-slot">Rejuvenate, Low Impact & Gentle Fitness</div>
-      <div class="time-slot">Cardio Blitz & Cardio Circuit</div>
-      <div class="time-slot">World Dance & Dance</div>
-      <div class="time-slot">Hilo & Fat Burner</div>
-      <div class="time-slot">Sculpt & Combo</div>
-      <div class="time-slot">-</div>
-
-      <div class="time">8.00 PM</div>
-      <div class="time-slot">Power Hour</div>
-      <div class="time-slot">ABT</div>
-      <div class="time-slot">Abs Blast</div>
-      <div class="time-slot">-</div>
-      <div class="time-slot">Chi Ball</div>
-      <div class="time-slot">-</div>
-      <div class="time-slot">-</div>
+        <div class="time">8.00 PM</div>
+        <div class="time-slot">Power Hour</div>
+        <div class="time-slot">ABT</div>
+        <div class="time-slot">Abs Blast</div>
+        <div class="time-slot">-</div>
+        <div class="time-slot">Chi Ball</div>
+        <div class="time-slot">-</div>
+        <div class="time-slot">-</div>
+      </div>
+      <div id="timetable-mobile">
+        <div class="day">MONDAY</div>
+        <div class="wrapper">
+          <div class="expandable">
+            <div class="time">9.00 AM</div>
+            <div class="time-slot">-</div>
+            <div class="time">11.00 AM</div>
+            <div class="time-slot">Body Step</div>
+            <div class="time">4.00 PM</div>
+            <div class="time-slot">Cycle</div>
+            <div class="time">6.00 PM</div>
+            <div class="time-slot">Step Moves, Step Basic & Step Burner</div>
+            <div class="time">8.00 PM</div>
+            <div class="time-slot">Power Hour</div>
+          </div>
+        </div>
+        <div class="day">TUESDAY</div>
+        <div class="wrapper">
+          <div class="expandable">
+            <div class="time">9.00 AM</div>
+            <div class="time-slot">Body Attack</div>
+            <div class="time">11.00 AM</div>
+            <div class="time-slot">RPM</div>
+            <div class="time">4.00 PM</div>
+            <div class="time-slot">Cycle Extreme</div>
+            <div class="time">6.00 PM</div>
+            <div class="time-slot">Rejuvenate, Low Impact & Gentle Fitness</div>
+            <div class="time">8.00 PM</div>
+            <div class="time-slot">ABT</div>
+          </div>
+        </div>
+        <div class="day">WEDNESDAY</div>
+        <div class="wrapper">
+          <div class="expandable">
+            <div class="time">9.00 AM</div>
+            <div class="time-slot">Zumba</div>
+            <div class="time">11.00 AM</div>
+            <div class="time-slot">Body Balance</div>
+            <div class="time">4.00 PM</div>
+            <div class="time-slot">Pilates</div>
+            <div class="time">6.00 PM</div>
+            <div class="time-slot">Cardio Blitz & Cardio Circuit</div>
+            <div class="time">8.00 PM</div>
+            <div class="time-slot">Abs Blast</div>
+          </div>
+        </div>
+        <div class="day">THURSDAY</div>
+        <div class="wrapper">
+          <div class="expandable">
+            <div class="time">9.00 AM</div>
+            <div class="time-slot">-</div>
+            <div class="time">11.00 AM</div>
+            <div class="time-slot">Body Combat</div>
+            <div class="time">4.00 PM</div>
+            <div class="time-slot">Yoga</div>
+            <div class="time">6.00 PM</div>
+            <div class="time-slot">World Dance & Dance</div>
+            <div class="time">8.00 PM</div>
+            <div class="time-slot">-</div>
+          </div>
+        </div>
+        <div class="day">FRIDAY</div>
+        <div class="wrapper">
+          <div class="expandable">
+            <div class="time">9.00 AM</div>
+            <div class="time-slot">Body Pump</div>
+            <div class="time">11.00 AM</div>
+            <div class="time-slot">Body Jam</div>
+            <div class="time">4.00 PM</div>
+            <div class="time-slot">Aqua Fit & Aqua Mode</div>
+            <div class="time">6.00 PM</div>
+            <div class="time-slot">Hilo & Fat Burner</div>
+            <div class="time">8.00 PM</div>
+            <div class="time-slot">Chi Ball</div>
+          </div>
+        </div>
+        <div class="day">SATURDAY</div>
+        <div class="wrapper">
+          <div class="expandable">
+            <div class="time">9.00 AM</div>
+            <div class="time-slot">Tai Chi</div>
+            <div class="time">11.00 AM</div>
+            <div class="time-slot">Body Vive</div>
+            <div class="time">4.00 PM</div>
+            <div class="time-slot">Boxing & TAE Box</div>
+            <div class="time">6.00 PM</div>
+            <div class="time-slot">Sculpt & Combo</div>
+            <div class="time">8.00 PM</div>
+            <div class="time-slot">-</div>
+          </div>
+        </div>
+        <div class="day">SUNDAY</div>
+        <div class="wrapper">
+          <div class="expandable">
+            <div class="time">NO CLASSES</div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div id="footer"></div>
+        <script>
+          $(document).ready(function () {
+            $("#footer").load("footer.html");
+          });
+        </script>
+      </footer>
     </div>
-    <div id="timetable-mobile">
-      <div class="day">MONDAY</div>
-      <div class="wrapper">
-        <div class="expandable">
-          <div class="time">9.00 AM</div>
-          <div class="time-slot">-</div>
-          <div class="time">11.00 AM</div>
-          <div class="time-slot">Body Step</div>
-          <div class="time">4.00 PM</div>
-          <div class="time-slot">Cycle</div>
-          <div class="time">6.00 PM</div>
-          <div class="time-slot">Step Moves, Step Basic & Step Burner</div>
-          <div class="time">8.00 PM</div>
-          <div class="time-slot">Power Hour</div>
-        </div>
-      </div>
-      <div class="day">TUESDAY</div>
-      <div class="wrapper">
-        <div class="expandable">
-          <div class="time">9.00 AM</div>
-          <div class="time-slot">Body Attack</div>
-          <div class="time">11.00 AM</div>
-          <div class="time-slot">RPM</div>
-          <div class="time">4.00 PM</div>
-          <div class="time-slot">Cycle Extreme</div>
-          <div class="time">6.00 PM</div>
-          <div class="time-slot">Rejuvenate, Low Impact & Gentle Fitness</div>
-          <div class="time">8.00 PM</div>
-          <div class="time-slot">ABT</div>
-        </div>
-      </div>
-      <div class="day">WEDNESDAY</div>
-      <div class="wrapper">
-        <div class="expandable">
-          <div class="time">9.00 AM</div>
-          <div class="time-slot">Zumba</div>
-          <div class="time">11.00 AM</div>
-          <div class="time-slot">Body Balance</div>
-          <div class="time">4.00 PM</div>
-          <div class="time-slot">Pilates</div>
-          <div class="time">6.00 PM</div>
-          <div class="time-slot">Cardio Blitz & Cardio Circuit</div>
-          <div class="time">8.00 PM</div>
-          <div class="time-slot">Abs Blast</div>
-        </div>
-      </div>
-      <div class="day">THURSDAY</div>
-      <div class="wrapper">
-        <div class="expandable">
-          <div class="time">9.00 AM</div>
-          <div class="time-slot">-</div>
-          <div class="time">11.00 AM</div>
-          <div class="time-slot">Body Combat</div>
-          <div class="time">4.00 PM</div>
-          <div class="time-slot">Yoga</div>
-          <div class="time">6.00 PM</div>
-          <div class="time-slot">World Dance & Dance</div>
-          <div class="time">8.00 PM</div>
-          <div class="time-slot">-</div>
-        </div>
-      </div>
-      <div class="day">FRIDAY</div>
-      <div class="wrapper">
-        <div class="expandable">
-          <div class="time">9.00 AM</div>
-          <div class="time-slot">Body Pump</div>
-          <div class="time">11.00 AM</div>
-          <div class="time-slot">Body Jam</div>
-          <div class="time">4.00 PM</div>
-          <div class="time-slot">Aqua Fit & Aqua Mode</div>
-          <div class="time">6.00 PM</div>
-          <div class="time-slot">Hilo & Fat Burner</div>
-          <div class="time">8.00 PM</div>
-          <div class="time-slot">Chi Ball</div>
-        </div>
-      </div>
-      <div class="day">SATURDAY</div>
-      <div class="wrapper">
-        <div class="expandable">
-          <div class="time">9.00 AM</div>
-          <div class="time-slot">Tai Chi</div>
-          <div class="time">11.00 AM</div>
-          <div class="time-slot">Body Vive</div>
-          <div class="time">4.00 PM</div>
-          <div class="time-slot">Boxing & TAE Box</div>
-          <div class="time">6.00 PM</div>
-          <div class="time-slot">Sculpt & Combo</div>
-          <div class="time">8.00 PM</div>
-          <div class="time-slot">-</div>
-        </div>
-      </div>
-      <div class="day">SUNDAY</div>
-      <div class="wrapper">
-        <div class="expandable">
-          <div class="time">NO CLASSES</div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div id="footer"></div>
-      <script>
-        $(document).ready(function () {
-          $("#footer").load("footer.html");
+    <script>
+      $(document).ready(function () {
+        // Bind the mouseenter event to the ".day" elements
+        $(".day").mouseenter(function () {
+          $(".wrapper").removeClass("open");
+          $(".expandable").removeClass("open");
+          $(this).next(".wrapper").addClass("open");
+          $(this).next(".expandable").addClass("open");
         });
-      </script>
-    </footer>
-  </div>
-  <script>
-    $(document).ready(function () {
-      // Bind the mouseenter event to the ".day" elements
-      $(".day").mouseenter(function () {
-        $(".wrapper").removeClass("open");
-        $(".expandable").removeClass("open");
-        $(this).next(".wrapper").addClass("open");
-        $(this).next(".expandable").addClass("open");
-      });
 
-      // Bind the mouseleave event to the timetable container to handle collapse
-      $("#timetable").mouseleave(function () {
-        $(".wrapper").removeClass("open");
-        $(".expandable").removeClass("open");
-      });
+        // Bind the mouseleave event to the timetable container to handle collapse
+        $("#timetable").mouseleave(function () {
+          $(".wrapper").removeClass("open");
+          $(".expandable").removeClass("open");
+        });
 
-      // Bind the mouseleave event to each wrapper individually to handle collapse
-      $(".wrapper").mouseleave(function () {
-        $(this).removeClass("open");
-        $(this).prev(".day").removeClass("open");
+        // Bind the mouseleave event to each wrapper individually to handle collapse
+        $(".wrapper").mouseleave(function () {
+          $(this).removeClass("open");
+          $(this).prev(".day").removeClass("open");
+        });
       });
-    });
-  </script>
-  <script src="script.js"></script>
-</body>
-
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
