@@ -126,6 +126,13 @@ h3 {
   color: white;
 }
 
+#index h3,
+#home h3 {
+  font-size: 2em;
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+}
+
 #index-container,
 #home-container,
 #classes-container,
@@ -451,8 +458,6 @@ textarea {
 #help-section {
   display: block;
   margin: 0 auto;
-  margin-top: -30px;
-  text-align: center;
 }
 
 #help-link {
@@ -465,6 +470,15 @@ textarea {
 
 #help-link:hover {
   text-decoration: none;
+}
+
+#help-popup {
+  display: none;
+  position: absolute; /* Change 'position' to 'absolute' */
+  top: 100%; /* Center the popup vertically */
+  left: 50%; /* Center the popup horizontally */
+  transform: translate(-50%, -50%); /* Center the popup perfectly */
+  z-index: 9999; /* Ensure the popup appears on top of other elements */
 }
 
 label[for]:after,
@@ -776,7 +790,7 @@ footer p {
   }
 
   .trainers-h3 {
-    margin-top: -500px;
+    margin-top: -480px;
   }
 
   #our-trainers {
@@ -989,6 +1003,11 @@ footer p {
 }
 
 @media (max-width: 360px) {
+  #index h3,
+  #home h3 {
+    font-size: 1.75em;
+    margin-bottom: -20px;
+  }
   #kathy,
   #leo {
     height: 80vh;
