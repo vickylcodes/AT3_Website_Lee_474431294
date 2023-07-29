@@ -1070,6 +1070,11 @@ footer p {
     width: 280px;
   }
 
+  .form-container {
+    gap: 0;
+    padding: 0;
+  }
+
   #contact-h2 {
     font-size: 2em;
   }
