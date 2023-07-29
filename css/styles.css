@@ -337,7 +337,7 @@ h3 {
   margin: 30px;
 }
 
-#h1-form {
+#form-h1 {
   background-color: #1d3557;
   border: none;
   margin-bottom: 0;
@@ -630,7 +630,7 @@ footer p {
     background-color: #e63946;
   }
 
-  #h1-form {
+  #form-h1 {
     width: 100%;
     margin-top: 100px;
     text-align: center;
@@ -900,7 +900,7 @@ footer p {
     font-weight: bold;
   }
 
-  #h1-form {
+  #form-h1 {
     width: 100%;
     margin-top: 100px;
     text-align: center;
@@ -1061,7 +1061,7 @@ footer p {
     margin: 0 13px;
   }
 
-  #h1-form {
+  #form-h1 {
     font-size: 2.8em;
   }
 
