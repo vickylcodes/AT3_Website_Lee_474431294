@@ -384,6 +384,10 @@ fieldset label.radio-label:after {
   content: "";
 }
 
+.form-group.enquiry label {
+  display: none;
+}
+
 #enquiry-select {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
